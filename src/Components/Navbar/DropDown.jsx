@@ -30,7 +30,7 @@ export default function DropDown(props) {
             <div>
             <Menu.Items
               static
-              className="mt-1 z-50 origin-top-right md:w-full w-96 md:absolute md:right-0 rounded-md shadow-lg bg-ungu-125 text-ungu-100  ring-1 ring-black ring-opacity-5 focus:outline-none"
+              className="mt-1 z-50 origin-top-right md:w-min w-96 md:absolute md:right-0 rounded-md shadow-lg bg-ungu-125 text-ungu-100  ring-1 ring-black ring-opacity-5 focus:outline-none"
             >
               <div className="py-1">
                 {props.items.map((items) => 

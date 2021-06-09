@@ -3,8 +3,9 @@ import Navbar from './Components/Navbar/NavBar'
 import Footer from './Components/Footer'
 import ScrollToTop from "./Components/ScrollToTop"
 import About from "./Pages/About"
-import Competition1 from "./Pages/Competition-1"
-import Competition2 from "./Pages/Competition-2"
+import Competition from "./Pages/Competition"
+import Conference from "./Pages/Conference"
+import Festival from "./Pages/Festival"
 import Homepage from "./Pages/Homepage"
 import HowToRegister from "./Pages/HowToRegister"
 import Registration from "./Pages/Registration"
@@ -21,12 +22,16 @@ function App() {
               <Registration />
             </Route>
 
-            <Route path="/competition-1">
-              <Competition1 />
+            <Route path="/competition">
+              <Competition />
             </Route>
 
-            <Route path="/competition-2">
-              <Competition2 />
+            <Route path="/conference">
+              <Conference />
+            </Route>
+   
+            <Route path="/festival">
+              <Festival />
             </Route>
 
             <Route path="/how-to-register">
