@@ -8,8 +8,8 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <div className="h-16 bg-indigo-300"></div>
-      <nav className="h-16 top-0 bg-indigo-300 fixed inset-x-0 opacity-90">
+      <div className="h-16 bg-ungu-100"></div>
+      <nav className="h-16 top-0 bg-ungu-100 fixed inset-x-0 opacity-90">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -28,7 +28,7 @@ function Nav() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-indigo-300 inline-flex items-center justify-center p-2 rounded-md text-indigo-800 hover:text-white hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-300 focus:ring-white"
+                className="bg-ungu-100 inline-flex items-center justify-center p-2 rounded-md text-ungu-400 hover:text-white hover:bg-ungu-150 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-ungu-100 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -82,7 +82,7 @@ function Nav() {
         >
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
-              <div ref={ref} className="bg-indigo-300 px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <div ref={ref} className="bg-ungu-100 px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <NavItems />
               </div>
             </div>

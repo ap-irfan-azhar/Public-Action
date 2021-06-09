@@ -12,7 +12,7 @@ function NavItems(props){
             <NavItem url="/about" screen= {props.screen} name="About" />
             <DropDown name="Competition" items={dropDownMenu}/>
             <NavItem url="/how-to-register" screen= {props.screen} name="How to register" />
-            <NavItem url="/register" screen= {props.screen} name="Registration" />
+            <NavItem url="/registration" screen= {props.screen} name="Registration" />
         </div>
     )
 }
