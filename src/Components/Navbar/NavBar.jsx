@@ -2,19 +2,19 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import NavItems from './NavItems'
-import { Link } from 'react-router-dom'
+import Logo from './Logo'
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
-      <div className="h-16 bg-ungu-100"></div>
-      <nav className="h-16 top-0 bg-ungu-100 fixed inset-x-0 opacity-90">
+    <div className="font-sans">
+      <div className="h-16 bg-white"></div>
+      <nav className="h-16 top-0 bg-white fixed inset-x-0 opacity-90 shadow">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <Link className="text-white font-monospaced text-2xl font-black" to="/"> <img src={process.env.PUBLIC_URL + 'images/logo-pa-icon.png'} alt='logo public action' className="w-14 h-14"/> </Link>
+		<Logo />
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
@@ -28,7 +28,7 @@ function Nav() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-ungu-100 inline-flex items-center justify-center p-2 rounded-md text-ungu-400 hover:text-white hover:bg-ungu-150 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-ungu-100 focus:ring-white"
+                className="bg-white inline-flex items-center justify-center p-2 rounded-md text-ungu-400 hover:text-white hover:bg-ungu-150 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-ungu-100 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -82,7 +82,7 @@ function Nav() {
         >
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
-              <div ref={ref} className="bg-ungu-100 px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <div ref={ref} className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow ">
                 <NavItems />
               </div>
             </div>
