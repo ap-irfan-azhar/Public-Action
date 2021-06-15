@@ -7,7 +7,7 @@ import Logo from './Logo'
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="font-sans">
+    <div className="font-sans z-50">
       <div className="h-16 bg-white"></div>
       <nav className="h-16 top-0 bg-white fixed inset-x-0 opacity-90 shadow">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

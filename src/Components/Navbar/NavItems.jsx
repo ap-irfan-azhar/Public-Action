@@ -21,7 +21,7 @@ function NavItems(props){
 	    <NavItem url="/how-to-register" screen= {props.screen} name="How to register" />
 
 		<DropDown name="Registrations" items={dropDownRegistrations}/>
-            <NavItem url="/#" screen= {props.screen} name="Mentors" />
+            <NavItem url="/#tes" screen= {props.screen} name="Mentors" />
             <NavItem url="/#" screen= {props.screen} name="Partner" />
         </div>
 

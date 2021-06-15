@@ -21,10 +21,10 @@ module.exports = {
         serif: ['Averia Serif', ...defautTheme.fontFamily.serif],
         sans: ['Montserrat', ...defautTheme.fontFamily.sans]
       },
-    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
+}
 }
