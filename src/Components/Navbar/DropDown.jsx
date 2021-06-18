@@ -6,6 +6,11 @@ import NavBarItem from './NavBarItem'
 
 
 export default function DropDown(props) {
+
+  function handleClick(){
+    props.onChange();
+}
+
   return (
     <Menu as="div" className="relative inline-block text-left">
       {({ open }) => (
@@ -36,7 +41,7 @@ export default function DropDown(props) {
                 {props.items.map((items) => 
                     <Menu.Item>
                     {({ active }) => (
-                    <NavBarItem url={items.url} screen = {props.screen} name={items.title}></NavBarItem>
+                    <NavBarItem onChange={handleClick} url={items.url} screen = {props.screen} name={items.title}></NavBarItem>
                     )}
                 </Menu.Item>
                 )}
