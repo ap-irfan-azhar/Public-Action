@@ -3,6 +3,8 @@ import Countdown from '../Components/Countdown/Countdown'
 import Timeline from '../Components/Homepage/Timeline/Timeline'
 import MentorBox from '../Components/Homepage/Mentors/MentorBox'
 import {mentors as mentorList} from '../Data/Mentors'
+import {partOf, partners, sponsors} from '../Data/Partners'
+import Partner from '../Components/Homepage/Partners/Partner'
 
 export default function Homepage () {
     return(
@@ -55,7 +57,7 @@ export default function Homepage () {
 			<div className=" bg-putih">
 				<Timeline />
 			</div>
-			<div className="bg-oren py-16 px-12 md:px-16">
+			<div className="bg-oren py-16 px-12 md:px-16" id="mentors">
 				<p className="text-white font-bold text-5xl text-center mb-12"> Mentors</p>
 				<div className="container mx-auto grid md:grid-cols-3 gap-4">
 					{mentorList.map( (mentor) =>
@@ -68,6 +70,48 @@ export default function Homepage () {
 					)}
 				</div>
 			</div>
+			
+			<div className="bg-putih py-16 px-12 md:px-16" id="partners">
+				<p className="text-ungu-400 font-bold text-5xl text-center mb-12">Partners</p>
+
+				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">sub judul</p>
+				<div className="container mx-auto grid md:grid-cols-4 grid-cols-2 gap-4 items-center contenr-center mb-20">
+					{partOf.map((partOf) => 
+						<Partner 
+							name={partOf.name}
+							img={partOf.img}
+							size_sm="36"
+							size_md="60"
+						/>
+					)}
+				</div>
+
+				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">Partners</p>
+				<div className="container mx-auto grid md:grid-cols-5 grid-cols-3 gap-4 items-center contenr-center mb-20">
+					{partners.map((partners) => 
+						<Partner 
+							name={partners.name}
+							img={partners.img}
+							size_sm="24"
+							size_md="40"
+						/>
+					)}
+				</div>
+
+				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">Sponsors</p>
+				<div className="container mx-auto grid md:grid-cols-5 grid-cols-2 gap-4 items-center contenr-center">
+					{sponsors.map((sponsors) => 
+						<Partner 
+							name={sponsors.name}
+							img={sponsors.img}
+							size_sm={40}
+							size_md={48}
+						/>
+					)}
+				</div>
+				
+			</div>
+
 		</div>
     )
 }
