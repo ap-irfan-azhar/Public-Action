@@ -2,13 +2,14 @@ import CountdownBox from './CountdownBox'
 import {useState} from 'react'
 
 
-export default function Countdown () {
+export default function Countdown (props) {
 	const [timerSeconds, setSeconds] = useState(0)	
 	const [timerMinutes, setMinutes] = useState(0)	
 	const [timerHours, setHours] = useState(0)	
-	const [timerDays, setDays] = useState(0)	
+	const [timerDays, setDays] = useState(0)
+		
 	
-	let countDownDate = new Date(new Date("jul 18, 2021 13:00:00").toLocaleString("en-US", {timeZone: "utc"})).getTime();
+	let countDownDate = new Date(new Date(props.date).toLocaleString("en-US", {timeZone: "utc"})).getTime();
 	
 	let startCountDown = setInterval( function() {
 	

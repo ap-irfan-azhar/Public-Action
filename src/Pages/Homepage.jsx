@@ -26,7 +26,9 @@ export default function Homepage () {
 			</div>
 			<div className="md:h-screen">
 				<div className="h-1/2 bg-ungu-400 my-auto py-5">
-					<Countdown />
+					<Countdown 
+						date="jul 18, 2021 13:00:00"
+					/>
 				</div>
 				<div className="relative md:h-1/2 h-96 flex flex-col justify-center items-center font-sans text-center">
 					<p className="font-bold text-4xl mb-10 text-ungu-400 z-20"> Our Grand Theme </p>

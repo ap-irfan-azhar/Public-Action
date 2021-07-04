@@ -8,7 +8,8 @@ import Conference from "./Pages/Conference"
 import Festival from "./Pages/Festival"
 import Homepage from "./Pages/Homepage"
 import HowToRegister from "./Pages/HowToRegister"
-import Registration from "./Pages/Registration"
+import RegistCompetition from "./Pages/RegistCompetition"
+import RegistConference from "./Pages/RegistConference"
 
 function App() {
   return (
@@ -18,37 +19,36 @@ function App() {
           <ScrollToTop />
           <Navbar />
           <Switch>
-            <Route path="/registration">
-              <Registration />
-            </Route>
-
-            <Route path="/competition">
+            <Route path="/competition" exact>
               <Competition />
             </Route>
 
-            <Route path="/conference">
+            <Route path="/conference" exact>
               <Conference />
             </Route>
    
-            <Route path="/festival">
+            <Route path="/festival" exact>
               <Festival />
             </Route>
 
-            <Route path="/how-to-register">
+            <Route path="/how-to-register" exact>
               <HowToRegister />
             </Route>
             
             
-            <Route path="/registration">
-              <Registration />
+            <Route path="/registration/conference" exact>
+              <RegistConference />
             </Route>
             
+            <Route path="/registration/competition" exact>
+              <RegistCompetition />
+            </Route>            
 
-            <Route path="/about">
+            <Route path="/about" exact>
               <About />
             </Route>
 
-            <Route path="/">
+            <Route path="/" exact>
               <Homepage />
             </Route>
           </Switch>

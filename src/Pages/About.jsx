@@ -1,4 +1,4 @@
-import {Object1, Object2, Group2} from "../Ornaments/Ornaments"
+import {Object1, Group2} from "../Ornaments/Ornaments"
 
 export default function About () {
     return(
