@@ -21,6 +21,9 @@ module.exports = {
         serif: ['Averia Serif', ...defautTheme.fontFamily.serif],
         sans: ['Montserrat', ...defautTheme.fontFamily.sans]
       },
+      zIndex: {
+        '-10': '-10',
+      },
   },
   variants: {
     extend: {},

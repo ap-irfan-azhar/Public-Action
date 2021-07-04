@@ -3,7 +3,7 @@ import { faInstagram, faSpotify } from '@fortawesome/free-brands-svg-icons'
 
 export default function Footer() {
     return(
-        <div className="bg-ungu-400 text-white shadow">
+        <div className="bg-ungu-400 text-white shadow z-30">
             <div className="container-lg mx-auto my-lg grid lg:grid-cols-4 max-w-screen">
 
                 <img src={process.env.PUBLIC_URL + 'images/logo-pa.png'} className="md:w-24 w-1/6 h-auto m-auto pt-5 md:pt-0" alt="Logo PA" />

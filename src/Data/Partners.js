@@ -54,6 +54,22 @@ const partners = [
         name:"Parter 8",
         img: "logo-gamapi.png"       
     },
+    {
+        name:"Parter 9",
+        img: "logo-gamapi.png"       
+    },
+    {
+        name:"Parter 10",
+        img: "logo-gamapi.png"       
+    },
+    {
+        name:"Parter 11",
+        img: "logo-gamapi.png"       
+    },
+    {
+        name:"Parter 12",
+        img: "logo-gamapi.png"       
+    },
 ]
 
 const sponsors = [

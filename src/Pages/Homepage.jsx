@@ -1,10 +1,11 @@
-import {LightBulbIcon, AcademicCap, BookOpen } from '../Components/Homepage/icons'
+ import {LightBulbIcon, AcademicCap, BookOpen } from '../Components/Homepage/icons'
 import Countdown from '../Components/Countdown/Countdown'
 import Timeline from '../Components/Homepage/Timeline/Timeline'
 import MentorBox from '../Components/Homepage/Mentors/MentorBox'
 import {mentors as mentorList} from '../Data/Mentors'
 import {partOf, partners, sponsors} from '../Data/Partners'
 import Partner from '../Components/Homepage/Partners/Partner'
+import {Object1, Group2} from '../Ornaments/Ornaments'
 
 export default function Homepage () {
     return(
@@ -16,8 +17,12 @@ export default function Homepage () {
 				</div>
 				<div style={{backgroundImage: `url(${process.env.PUBLIC_URL}/svg/pattern1.svg)`}} className="absolute z-0 w-full h-full opacity-50"></div>
 				<div className="absolute z-10 md:w-80 md:h-80 w-52 h-52 bg-gradient-to-br from-ungu-100 to-ungu-400 rounded-full -top-20 md:-left-12 -left-20" > </div>
-				<div className="absolute z-10 md:w-52 md:h-80 w-44 h-64 bg-ungu-200 opacity-75 rounded-full -top-20 -right-16" > </div>
-				<div className="absolute z-10 md:w-72 md:h-56 w-56 h-52 bg-ungu-200 opacity-75 py-2 rounded-full md:top-20 -top-10 -right-24" > </div>
+				<div className="absolute hidden md:block z-10 md:w-52 md:h-80 w-44 h-64 bg-ungu-200 opacity-75 rounded-full -top-20 -right-16" > </div>
+				<div className="absolute hidden md:block z-10 md:w-72 md:h-56 w-56 h-52 bg-ungu-200 opacity-75 py-2 rounded-full md:top-20 -top-10 -right-24" > </div>
+				<div className=" md:hidden absolute -top-16 -right-32 text-ungu-400">
+				<Object1 />
+				</div>
+        
 			</div>
 			<div className="md:h-screen">
 				<div className="h-1/2 bg-ungu-400 my-auto py-5">
@@ -31,10 +36,13 @@ export default function Homepage () {
 				</div>
 			</div>
 			<div className="md:h-screen">
-				<div className="md:h-1/2 h-96 flex flex-col bg-putih text-center justify-evenly items-center font-sans">	
+				<div className="md:h-1/2 h-96 flex flex-col bg-putih text-center justify-evenly items-center relative">	
 					<p className="text-3xl text-ungu-400 font-bold pb-12"> About Competition </p>
 					<p className="text-lg text-ungu-300">ASEAN Innovative Policy Competition (AIPC)</p>
 					<p className="md:max-w-xl max-w-sm text-ungu-300 pb-4"> This competition is open for undergraduate students across ASEAN from any major to challenge their critical thinking skills regarding several social issues. This year, we focus on the three pillars of ASEAN, namely: Political-Security Community (APC), Economic Community (AEC), and Socio-Cultural Community (ASC). </p>
+            <div className="absolute top-10 md:left-12 z-10 opacity-50">
+              <Group2 />
+            </div>          
 				</div>	
 				<div className="h-1/2 flex flex-col justify-evenly items-center">	
 					<p className="py-5 text-4xl text-ungu-400 font-bold font-sans"> Objectives </p>
@@ -75,7 +83,7 @@ export default function Homepage () {
 				<p className="text-ungu-400 font-bold text-5xl text-center mb-12">Partners</p>
 
 				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">sub judul</p>
-				<div className="container mx-auto grid md:grid-cols-4 grid-cols-2 gap-4 items-center contenr-center mb-20">
+				<div className="container mx-auto grid md:grid-cols-4 grid-cols-2 gap-4 items-center content-center mb-20">
 					{partOf.map((partOf) => 
 						<Partner 
 							name={partOf.name}
@@ -87,7 +95,7 @@ export default function Homepage () {
 				</div>
 
 				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">Partners</p>
-				<div className="container mx-auto grid md:grid-cols-5 grid-cols-3 gap-4 items-center contenr-center mb-20">
+				<div className="container mx-auto grid md:grid-cols-5 grid-cols-3 gap-4 items-center content-center mb-20">
 					{partners.map((partners) => 
 						<Partner 
 							name={partners.name}
@@ -99,7 +107,7 @@ export default function Homepage () {
 				</div>
 
 				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">Sponsors</p>
-				<div className="container mx-auto grid md:grid-cols-5 grid-cols-2 gap-4 items-center contenr-center">
+				<div className="container mx-auto grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-4 items-center content-center">
 					{sponsors.map((sponsors) => 
 						<Partner 
 							name={sponsors.name}
@@ -111,7 +119,6 @@ export default function Homepage () {
 				</div>
 				
 			</div>
-
-		</div>
-    )
+    </div>
+  )
 }
