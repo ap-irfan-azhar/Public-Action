@@ -20,6 +20,7 @@ export default function Competition () {
                             <Object1 />
                         </div>
                         <div className="absolute bg-ungu-200 w-screen h-12 left-0 bottom-0"/>
+                        <div className="absolute bg-putih bg-opacity-50 top-0 left-0 w-full h-full -z-20"></div>
                     </div>
             </div>
         </div>

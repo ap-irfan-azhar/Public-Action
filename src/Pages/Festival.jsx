@@ -34,6 +34,7 @@ export default function Festival() {
                 <div className="absolute -bottom-16 -left-28 -z-10 transform rotate-180">
                     <Object1 />
                 </div>
+                <div className="absolute bg-putih bg-opacity-50 top-0 left-0 w-full h-full -z-20"></div>
             </div>
 
         </div>
