@@ -1,4 +1,6 @@
-import {Object2, Object1} from "../Ornaments/Ornaments"
+import {Object2, Object1, Group2} from "../Ornaments/Ornaments"
+import Timeline from '../Components/Homepage/Timeline/Timeline'
+import {LightBulbIcon, AcademicCap, BookOpen } from '../Components/Homepage/icons'
 
 export default function Competition () {
     return(
@@ -22,7 +24,39 @@ export default function Competition () {
                         <div className="absolute bg-ungu-200 w-screen h-12 left-0 bottom-0"/>
                         <div className="absolute bg-putih bg-opacity-50 top-0 left-0 w-full h-full -z-20"></div>
                     </div>
+                    
             </div>
+
+            <div className="md:h-screen">
+				<div className="md:h-1/2 h-96 flex flex-col bg-putih text-center justify-evenly items-center relative">	
+					<p className="text-3xl text-ungu-400 font-bold pb-12"> About Competition </p>
+					<p className="text-lg text-ungu-300">ASEAN Innovative Policy Competition (AIPC)</p>
+					<p className="md:max-w-xl max-w-sm text-ungu-300 pb-4"> This competition is open for undergraduate students across ASEAN from any major to challenge their critical thinking skills regarding several social issues. This year, we focus on the three pillars of ASEAN, namely: Political-Security Community (APC), Economic Community (AEC), and Socio-Cultural Community (ASC). </p>
+            <div className="absolute top-10 md:left-12 z-10 opacity-50">
+              <Group2 />
+            </div>          
+				</div>	
+				<div className="h-1/2 flex flex-col justify-evenly items-center">	
+					<p className="py-5 text-4xl text-ungu-400 font-bold font-sans"> Objectives </p>
+					<div className="grid md:grid-cols-3 grid-cols-1 pb-5 md:pb-10">
+						<div className="flex flex-col items-center bg-putih shadow max-w-max rounded-lg text-center p-4 m-4">
+							<LightBulbIcon />
+							<p className="text-ungu-200 max-w-xs"> Giving opportunity for undergraduate students across ASEAN to demonstrate their critical thinking skills </p>
+							</div>
+						<div className="flex flex-col items-center bg-putih shadow max-w-max rounded-lg text-center p-4 m-4">
+							<AcademicCap />
+							<p className="text-ungu-200 max-w-xs"> Building the engagement and solidarity of ASEAN communities towards perpetual social issues </p>
+							</div>
+						<div className="flex flex-col items-center bg-putih shadow max-w-max rounded-lg text-center p-4 m-4">
+							<BookOpen />
+							<p className="text-ungu-200 max-w-xs"> Supporting the new generation of policy makers through mentorship </p>
+							</div>
+					</div>
+				</div>	
+			</div>
+			<div className=" bg-putih">
+				<Timeline />
+			</div>
         </div>
     )
 }

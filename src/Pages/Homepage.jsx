@@ -1,15 +1,15 @@
- import {LightBulbIcon, AcademicCap, BookOpen } from '../Components/Homepage/icons'
+import {Link} from 'react-router-dom'
 import Countdown from '../Components/Countdown/Countdown'
 import Timeline from '../Components/Homepage/Timeline/Timeline'
 import MentorBox from '../Components/Homepage/Mentors/MentorBox'
 import {mentors as mentorList} from '../Data/Mentors'
 import {partOf, partners, sponsors} from '../Data/Partners'
 import Partner from '../Components/Homepage/Partners/Partner'
-import {Object1, Group2} from '../Ornaments/Ornaments'
+import {Object1} from '../Ornaments/Ornaments'
 
 export default function Homepage () {
     return(
-		<div className="overflow-hidden">
+		<div className="overflow-hidden text-ungu-400">
 			<div className="h-screen bg-putih flex items-center relative">
 				<div className="mx-auto z-40">
 					<p className="text-ungu-400 text-6xl md:text-7xl font-serif text-center"> Welcome to </p>	
@@ -37,32 +37,40 @@ export default function Homepage () {
 					<div className="absolute w-56 h-20 -right-16 top-28 rounded-full py-6 bg-ungu-100 z-0"></div>
 				</div>
 			</div>
-			<div className="md:h-screen">
-				<div className="md:h-1/2 h-96 flex flex-col bg-putih text-center justify-evenly items-center relative">	
-					<p className="text-3xl text-ungu-400 font-bold pb-12"> About Competition </p>
-					<p className="text-lg text-ungu-300">ASEAN Innovative Policy Competition (AIPC)</p>
-					<p className="md:max-w-xl max-w-sm text-ungu-300 pb-4"> This competition is open for undergraduate students across ASEAN from any major to challenge their critical thinking skills regarding several social issues. This year, we focus on the three pillars of ASEAN, namely: Political-Security Community (APC), Economic Community (AEC), and Socio-Cultural Community (ASC). </p>
-            <div className="absolute top-10 md:left-12 z-10 opacity-50">
-              <Group2 />
-            </div>          
-				</div>	
-				<div className="h-1/2 flex flex-col justify-evenly items-center">	
-					<p className="py-5 text-4xl text-ungu-400 font-bold font-sans"> Objectives </p>
-					<div className="grid md:grid-cols-3 grid-cols-1 pb-5 md:pb-10">
-						<div className="flex flex-col items-center bg-putih shadow max-w-max rounded-lg text-center p-4 m-4">
-							<LightBulbIcon />
-							<p className="text-ungu-200 max-w-xs"> Giving opportunity for undergraduate students across ASEAN to demonstrate their critical thinking skills </p>
+			<div className="bg-oren py-12 md:px-20 px-8">
+				<h2 className="text-4xl text-ungu-400 font-serif font-bold text-center my-8">Our Events</h2>
+				<div className="md:flex justify-evenly">
+					<Link className="md:w-1/4 w-1/4" to="/events/competition">
+						<div 
+							className="my-10 h-40 bg-putih rounded text-center bg-cover transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+							style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340_960_720.jpg")` }}
+						> 
+							<div className="text-center font-semibold text-lg py-16">
+								Competition
 							</div>
-						<div className="flex flex-col items-center bg-putih shadow max-w-max rounded-lg text-center p-4 m-4">
-							<AcademicCap />
-							<p className="text-ungu-200 max-w-xs"> Building the engagement and solidarity of ASEAN communities towards perpetual social issues </p>
+						</div>
+					</Link>
+					<Link className="md:w-1/4 w-1/4" to="/events/conference">
+						<div 
+							className="my-10 h-40 bg-putih rounded text-center bg-cover transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+							style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2016/08/16/09/53/international-conference-1597531_960_720.jpg")` }}
+						> 
+							<div className="text-center font-semibold text-lg py-16 text-putih">
+								Conference
 							</div>
-						<div className="flex flex-col items-center bg-putih shadow max-w-max rounded-lg text-center p-4 m-4">
-							<BookOpen />
-							<p className="text-ungu-200 max-w-xs"> Supporting the new generation of policy makers through mentorship </p>
+						</div>
+					</Link>
+					<Link className="md:w-1/4 w-1/4" to="/events/festival">
+						<div 
+							className="my-10 h-40 bg-putih rounded text-center bg-cover transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+							style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2019/06/13/16/06/dance-4271941_960_720.jpg")` }}
+						> 
+							<div className="text-center font-semibold text-lg py-16">
+								Festival
 							</div>
-					</div>
-				</div>	
+						</div>
+					</Link>
+				</div>
 			</div>
 			<div className=" bg-putih">
 				<Timeline />

@@ -10,6 +10,7 @@ import Homepage from "./Pages/Homepage"
 import HowToRegister from "./Pages/HowToRegister"
 import RegistCompetition from "./Pages/RegistCompetition"
 import RegistConference from "./Pages/RegistConference"
+import AbstractSubmission from "./Pages/AbstractSubmission"
 
 function App() {
   return (
@@ -34,7 +35,11 @@ function App() {
             <Route path="/how-to-register" exact>
               <HowToRegister />
             </Route>
-            
+          
+            <Route path="/abstract-submission" exact>
+              <AbstractSubmission />
+            </Route>
+                      
             
             <Route path="/registration/conference" exact>
               <RegistConference />
