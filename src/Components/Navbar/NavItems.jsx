@@ -2,9 +2,9 @@ import NavItem from './NavBarItem'
 import DropDown from './DropDown'
 
 const dropDownEvents = [
-    {title: "Competition", url:"/competition"},
-    {title: "Conference", url:"/conference"},
-    {title: "Festival", url:"/festival"},
+    {title: "Competition", url:"/events/competition"},
+    {title: "Conference", url:"/events/conference"},
+    {title: "Festival", url:"/events/festival"},
 ]
 
 

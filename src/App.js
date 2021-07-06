@@ -19,15 +19,15 @@ function App() {
           <ScrollToTop />
           <Navbar />
           <Switch>
-            <Route path="/competition" exact>
+            <Route path="/events/competition" exact>
               <Competition />
             </Route>
 
-            <Route path="/conference" exact>
+            <Route path="/events/conference" exact>
               <Conference />
             </Route>
    
-            <Route path="/festival" exact>
+            <Route path="/events/festival" exact>
               <Festival />
             </Route>
 
