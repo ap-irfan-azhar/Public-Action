@@ -1,6 +1,5 @@
 import {Link} from 'react-router-dom'
 import Countdown from '../Components/Countdown/Countdown'
-import Timeline from '../Components/Homepage/Timeline/Timeline'
 import MentorBox from '../Components/Homepage/Mentors/MentorBox'
 import {mentors as mentorList} from '../Data/Mentors'
 import {partOf, partners, sponsors} from '../Data/Partners'
@@ -37,7 +36,7 @@ export default function Homepage () {
 					<div className="absolute w-56 h-20 -right-16 top-28 rounded-full py-6 bg-ungu-100 z-0"></div>
 				</div>
 			</div>
-			<div className="bg-oren py-12 md:px-20 px-8">
+			<div className="bg-putih py-12 md:px-20 px-8">
 				<h2 className="text-4xl text-ungu-400 font-serif font-bold text-center my-8">Our Events</h2>
 				<div className="md:flex justify-evenly">
 					<Link className="md:w-1/4 w-1/4" to="/events/competition">
@@ -71,9 +70,6 @@ export default function Homepage () {
 						</div>
 					</Link>
 				</div>
-			</div>
-			<div className=" bg-putih">
-				<Timeline />
 			</div>
 			<div className="bg-oren py-16 px-12 md:px-16" id="mentors">
 				<p className="text-white font-bold text-5xl text-center mb-12"> Mentors</p>

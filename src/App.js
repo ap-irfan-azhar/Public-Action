@@ -39,6 +39,14 @@ function App() {
             <Route path="/abstract-submission" exact>
               <AbstractSubmission />
             </Route>
+
+            <Route path="/competition-booklet" exact>
+              <div className="block h-screen w-screen bg-putih text-5xl text-center font-serif">
+                <p className="my-40">
+                  Nanti Booklet lomba di-<i>embed</i> di laman ini
+                </p>
+              </div>
+            </Route>
                       
             
             <Route path="/registration/conference" exact>
