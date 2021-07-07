@@ -16,7 +16,7 @@ export default function DropDown(props) {
       {({ open }) => (
         <>
           <div>
-            <Menu.Button className={` ${open ? "bg-ungu-300 text-white shadow-inner ": "bg-white text-ungu-400"} inline-flex  rounded-md px-3 py-2 md:text-sm text-base font-medium hover:bg-ungu-150 hover:text-white focus:outline-none focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500`}>
+            <Menu.Button className={` ${open ? "bg-ungu-300 text-white shadow-inner ": "bg-white text-ungu-400"} transition duration-500 ease-in-out inline-flex  rounded-md px-3 py-2 md:text-sm text-base font-medium hover:bg-ungu-150 hover:text-white focus:outline-none focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500`}>
                 {props.name}
                 {open ? <ChevronUpIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true"/>: <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />}
             </Menu.Button>
