@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faSpotify } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faSpotify, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 export default function Footer() {
     return(
@@ -17,14 +17,15 @@ export default function Footer() {
                 <div className="mx-auto my-5 text-sm w-max text-left">
                     <p className="font-semibold text-lg text-center">Social Media</p>
                     <a  className="text-lg hover:text-ungu-100" href="https://www.instagram.com/publicaction.ugm/"target="_blank"   rel="noreferrer"><p> <FontAwesomeIcon icon={faInstagram} />  publicaction.ugm </p></a>
-                    <a  className="text-lg hover:text-ungu-100" href="bit.ly/PAsPodcast"target="_blank"   rel="noreferrer"><p> <FontAwesomeIcon icon={faSpotify} />  Podcast </p></a>
                     <a  className="text-lg hover:text-ungu-100" href="https://www.instagram.com/gamapict/" target="_blank" rel="noreferrer"><p> <FontAwesomeIcon icon={faInstagram} /> gamapict </p></a>
+                    <a  className="text-lg hover:text-ungu-100" href="https://id.linkedin.com/company/public-action-ugm" target="_blank" rel="noreferrer"><p> <FontAwesomeIcon icon={faLinkedinIn} /> Public Action UGM </p></a>
+                    <a  className="text-lg hover:text-ungu-100" href="https://bit.ly/PAsPodcast"target="_blank"   rel="noreferrer"><p> <FontAwesomeIcon icon={faSpotify} />  Podcast </p></a>
                 </div>
                 <div className="mx-auto my-5 text-sm w-max pb-5 text-left">
                     <p className="font-semibold text-lg text-center">External Sites</p>
-                    <a className="hover:text-ungu-100 " href="https://gamapi.fisipol.ugm.ac.id/" target="_blank" rel="noreferrer"> Gamapi</a>
+                    <a className="hover:text-ungu-100 my-3 text-lg md:text-base " href="https://gamapi.fisipol.ugm.ac.id/" target="_blank" rel="noreferrer"> Gamapi</a>
                     <br />
-                    <a className="hover:text-ungu-100" href="https://mkp.fisipol.ugm.ac.id/en/" target="_blank" rel="noreferrer"> Public Policy and Management </a>
+                    <a className="hover:text-ungu-100 my-3 text-lg md:text-base" href="https://mkp.fisipol.ugm.ac.id/en/" target="_blank" rel="noreferrer"> Public Policy and Management </a>
                 </div>
 
             </div>
