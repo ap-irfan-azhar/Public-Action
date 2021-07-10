@@ -24,7 +24,7 @@ function App() {
               <Competition />
             </Route>
 
-            <Route path="/events/conference" exact>
+            <Route path="/events/conferences" exact>
               <Conference />
             </Route>
    
