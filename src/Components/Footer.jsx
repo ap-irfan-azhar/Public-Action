@@ -1,12 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faSpotify, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
     return(
         <div className="bg-ungu-400 text-white shadow z-30">
-            <div className="container-lg mx-auto my-lg grid lg:grid-cols-4 max-w-screen">
+            <div className="md:container-lg mx-auto my-lg grid lg:grid-cols-4 max-w-screen">
 
-                <img src={process.env.PUBLIC_URL + '/images/logo-pa.png'} className="md:w-24 w-1/6 h-auto m-auto pt-5 md:pt-0" alt="Logo PA" />
+                <img src={process.env.PUBLIC_URL + '/images/logo-pa.png'} className="md:w-36 w-1/6 h-auto m-auto pt-5 md:pt-0" alt="Logo PA" />
                 <div className="mx-auto md:my-5 my-2 text-sm w-max md:text-justify text-center">
                     <p className="font-semibold text-lg">Public Action 2021</p>
                     <p>Public Policy and Management</p>
@@ -26,6 +27,13 @@ export default function Footer() {
                     <a className="hover:text-ungu-100 my-3 text-lg md:text-base " href="https://gamapi.fisipol.ugm.ac.id/" target="_blank" rel="noreferrer"> Gamapi</a>
                     <br />
                     <a className="hover:text-ungu-100 my-3 text-lg md:text-base" href="https://mkp.fisipol.ugm.ac.id/en/" target="_blank" rel="noreferrer"> Public Policy and Management </a>
+                    
+                    <div className="mx-auto my-5 text-sm w-max pb-5 text-left">
+                        <p className="font-semibold text-lg text-center">Contact Us</p>
+                        <a href="mailto:publicaction-mkp.fisipol@ugm.ac.id" target="_blank" rel="noreferrer">
+                        <p className="hover:text-ungu-100"><FontAwesomeIcon icon={faEnvelope} /> publicaction-mkp.fisipol@ugm.ac.id</p>
+                        </a>
+                    </div>
                 </div>
 
             </div>
