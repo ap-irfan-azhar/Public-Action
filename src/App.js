@@ -5,7 +5,7 @@ import ScrollToTop from "./Components/ScrollToTop"
 import About from "./Pages/About"
 import Competition from "./Pages/Competition"
 import Conference from "./Pages/Conference"
-import Festival from "./Pages/Festival"
+import SideEvents from "./Pages/SideEvents"
 import Homepage from "./Pages/Homepage"
 import HowToRegister from "./Pages/HowToRegister"
 import RegistCompetition from "./Pages/RegistCompetition"
@@ -28,8 +28,8 @@ function App() {
               <Conference />
             </Route>
    
-            <Route path="/events/festival" exact>
-              <Festival />
+            <Route path="/events/side-events" exact>
+              <SideEvents />
             </Route>
 
             <Route path="/how-to-register" exact>

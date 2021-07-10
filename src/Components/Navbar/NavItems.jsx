@@ -4,7 +4,7 @@ import DropDown from './DropDown'
 const dropDownEvents = [
     {title: "Competition", url:"/events/competition"},
     {title: "Conference", url:"/events/conference"},
-    {title: "Festival", url:"/events/festival"},
+    {title: "Side Events", url:"/events/side-events"},
 ]
 
 
