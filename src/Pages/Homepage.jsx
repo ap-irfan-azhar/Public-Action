@@ -24,17 +24,35 @@ export default function Homepage () {
         
 			</div>
 			<div className="md:h-screen">
-				<div className="h-1/2 bg-ungu-400 my-auto py-5">
+				<div className="h-1/2 bg-ungu-400 my-auto">
+					<h2 className="text-center text-4xl font-bold font-serif text-white pt-4"> Registration will open in</h2>
 					<Countdown 
 						date="jul 18, 2021 13:00:00"
 					/>
 				</div>
 				<div className="relative md:h-1/2 h-96 flex flex-col justify-center items-center font-sans text-center">
-					<p className="font-bold text-4xl mb-10 text-ungu-400 z-20"> Our Grand Theme </p>
-					<p className="text-lg max-w-xl text-ungu-300 z-20"> "innovative Youths in Action: Emphasizing Public Value in Addressing Perpetual Social Issues” </p>
+					<p className="font-bold text-4xl mb-10 text-ungu-400 z-20 fonr-serif"> Our Grand Theme </p>
+					<p className="text-lg max-w-xl text-ungu-300 z-20"> "Innovative Youths in Action: Emphasizing Public Value in Addressing Perpetual Social Issues” </p>
 					<div className="absolute w-56 h-20 -right-8 top-4 rounded-full py-6 bg-ungu-300 z-0"></div>
 					<div className="absolute w-56 h-20 -right-16 top-28 rounded-full py-6 bg-ungu-100 z-0"></div>
 				</div>
+			</div>
+			<div className="bg-ungu-100 justify-center py-5">
+				<h2 className="text-4xl text-ungu-400 font-bold text-center mb-5 font-serif">Our Pre-Events</h2>
+				<iframe 
+					className="mx-auto md:w-3/4 w-full px-4 mb-5"
+					title="episode 1" 
+					src="https://open.spotify.com/embed/episode/0cyIp7sHbvs22mDpRChfXb" 
+					height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media">
+				</iframe>
+
+				<iframe 
+					className="mx-auto md:w-3/4 w-full px-4 mb-5 shaddown-lg"
+					title="episode 2"
+					src="https://open.spotify.com/embed/episode/5rejGQ5egtbIj2wdpfyIUj" 
+					height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media">
+
+				</iframe>
 			</div>
 			<div className="bg-putih py-12 md:px-20 px-8">
 				<h2 className="text-4xl text-ungu-400 font-serif font-bold text-center my-8">Our Events</h2>
@@ -72,7 +90,7 @@ export default function Homepage () {
 				</div>
 			</div>
 			<div className="bg-oren py-16 px-12 md:px-16" id="mentors">
-				<p className="text-white font-bold text-5xl text-center mb-12"> Mentors</p>
+				<p className="text-white font-bold text-5xl text-center mb-12 font-serif"> Mentors</p>
 				<div className="container mx-auto grid md:grid-cols-3 gap-4">
 					{mentorList.map( (mentor) =>
 						<MentorBox
@@ -86,9 +104,9 @@ export default function Homepage () {
 			</div>
 			
 			<div className="bg-putih py-16 px-12 md:px-16" id="partners">
-				<p className="text-ungu-400 font-bold text-5xl text-center mb-12">Partners</p>
+				<p className="text-ungu-400 font-bold text-5xl text-center mb-12 font-serif">Partners</p>
 
-				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">sub judul</p>
+				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">Subjudul</p>
 				<div className="container mx-auto grid md:grid-cols-4 grid-cols-2 gap-4 items-center content-center mb-20">
 					{partOf.map((partOf) => 
 						<Partner 
