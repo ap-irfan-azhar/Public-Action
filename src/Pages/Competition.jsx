@@ -2,6 +2,9 @@ import {Object1, Group2} from "../Ornaments/Ornaments"
 import Timeline from '../Components/Homepage/Timeline/TimelineCompetition'
 import {LightBulbIcon, AcademicCap, BookOpen } from '../Components/Homepage/icons'
 import { Link } from 'react-router-dom'
+import MentorBox from '../Components/Homepage/Mentors/MentorBox'
+import {mentors as mentorList} from '../Data/Mentors'
+
 
 export default function Competition () {
     return(
@@ -11,7 +14,7 @@ export default function Competition () {
                         <div className="z-10 text-ungu-300">
                             <h1 className="md:text-5xl text-4xl font-bold font-serif text-center my-5">ASEAN Innovative Policy Competition (AIPC)</h1>
                             <p className="text-justify text-lg font-serif">
-                                ASEAN Innovative Policy Competition (AIPC) is a competition for undergraduate students across ASEAN to challenge their critical thinking skills regarding several social issues. AIPC also provides exclusive conference and mentorship for the participants. This year, AIPC focuses on the three pillars of ASEAN: Political-Security Community (APC), Economic Community (AEC), and Socio-Cultural Community (ASC) with the topics as follows:
+                            ASEAN Innovative Policy Competition (AIPC) is a competition held for undergraduate students across ASEAN to challenge their critical thinking skills regarding several social issues. AIPC provides exclusive conference for all the registrants and exclusive mentorship for the selected participants. This year, AIPC focuses on the three pillars of ASEAN: Political-Security Community (APC), Economic Community (AEC), and Socio-Cultural Community (ASC) with the topics as follows:
                             </p>
                             <div className="md:flex md:justify-evenly">
                                 <div 
@@ -72,37 +75,43 @@ export default function Competition () {
                     
             </div>
 
-            <div className="md:h-screen">
-                <div className="w-screen h-6 bg-ungu-400"/>
-				<div className="md:h-1/2 h-96 flex flex-col bg-putih text-center justify-evenly items-center relative">	
-					<p className="text-3xl text-ungu-400 font-bold pb-12"> About Competition </p>
-					<p className="text-lg text-ungu-300">ASEAN Innovative Policy Competition (AIPC)</p>
-					<p className="md:max-w-xl max-w-sm text-ungu-300 pb-4"> This competition is open for undergraduate students across ASEAN from any major to challenge their critical thinking skills regarding several social issues. This year, we focus on the three pillars of ASEAN, namely: Political-Security Community (APC), Economic Community (AEC), and Socio-Cultural Community (ASC). </p>
-            <div className="absolute top-10 md:left-12 z-10 opacity-50">
-              <Group2 />
-            </div>          
-				</div>	
-				<div className="h-1/2 flex flex-col justify-evenly items-center">	
-					<p className="py-5 text-4xl text-ungu-400 font-bold font-sans"> Objectives </p>
-					<div className="grid md:grid-cols-3 grid-cols-1 pb-5 md:pb-10">
-						<div className="flex flex-col items-center bg-putih shadow max-w-max rounded-lg text-center p-4 m-4">
-							<LightBulbIcon />
-							<p className="text-ungu-200 max-w-xs"> Giving opportunity for undergraduate students across ASEAN to demonstrate their critical thinking skills </p>
-						</div>
-						<div className="flex flex-col items-center bg-putih shadow max-w-max rounded-lg text-center p-4 m-4">
-							<AcademicCap />
-							<p className="text-ungu-200 max-w-xs"> Building the engagement and solidarity of ASEAN communities towards perpetual social issues </p>
-						</div>
-						<div className="flex flex-col items-center bg-putih shadow max-w-max rounded-lg text-center p-4 m-4">
-							<BookOpen />
-							<p className="text-ungu-200 max-w-xs"> Supporting the new generation of policy makers through mentorship </p>
-						</div>
-					</div>
-				</div>	
-			</div>
+
+            <div className="w-screen h-6 bg-ungu-400"/>
+            <div className="flex flex-col justify-evenly items-center py-5">	
+                <p className="py-5 text-4xl text-ungu-400 font-bold font-sans"> Objectives </p>
+                <div className="grid md:grid-cols-3 grid-cols-1 pb-5 md:pb-10">
+                    <div className="flex flex-col items-center bg-putih shadow max-w-max rounded-lg text-center p-4 m-4">
+                        <LightBulbIcon />
+                        <p className="text-ungu-200 max-w-xs"> Giving opportunity for undergraduate students across ASEAN to demonstrate their critical thinking skills </p>
+                    </div>
+                    <div className="flex flex-col items-center bg-putih shadow max-w-max rounded-lg text-center p-4 m-4">
+                        <AcademicCap />
+                        <p className="text-ungu-200 max-w-xs"> Building the engagement and solidarity of ASEAN communities towards perpetual social issues </p>
+                    </div>
+                    <div className="flex flex-col items-center bg-putih shadow max-w-max rounded-lg text-center p-4 m-4">
+                        <BookOpen />
+                        <p className="text-ungu-200 max-w-xs"> Supporting the new generation of policy makers through mentorship </p>
+                    </div>
+                </div>
+            </div>	
+
 			<div className=" bg-putih">
 				<Timeline />
 			</div>
+
+            <div className="bg-oren py-16 px-12 md:px-16" id="mentors">
+                <p className="text-white font-bold text-5xl text-center mb-12 font-serif"> Mentors</p>
+                <div className="container mx-auto grid md:grid-cols-3 gap-4">
+                    {mentorList.map( (mentor) =>
+                        <MentorBox
+                            name={mentor.name}
+                            img={mentor.img}
+                            desc1={mentor.desc1}
+                            desc2={mentor.desc2}
+                        />
+                    )}
+                </div>
+            </div>
         </div>
     )
 }

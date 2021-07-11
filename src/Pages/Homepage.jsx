@@ -1,7 +1,5 @@
 import {Link} from 'react-router-dom'
 import Countdown from '../Components/Countdown/Countdown'
-import MentorBox from '../Components/Homepage/Mentors/MentorBox'
-import {mentors as mentorList} from '../Data/Mentors'
 import {partOf, partners, sponsors} from '../Data/Partners'
 import Partner from '../Components/Homepage/Partners/Partner'
 import {Object1} from '../Ornaments/Ornaments'
@@ -19,26 +17,26 @@ export default function Homepage () {
 				<div className="absolute hidden md:block z-10 md:w-52 md:h-80 w-44 h-64 bg-ungu-200 opacity-75 rounded-full -top-20 -right-16" > </div>
 				<div className="absolute hidden md:block z-10 md:w-72 md:h-56 w-56 h-52 bg-ungu-200 opacity-75 py-2 rounded-full md:top-20 -top-10 -right-24" > </div>
 				<div className=" md:hidden absolute -top-16 -right-32 text-ungu-400">
-				<Object1 />
+					<Object1 />
 				</div>
         
 			</div>
-			<div className="md:h-screen">
-				<div className="h-1/2 bg-ungu-400 my-auto">
-					<h2 className="text-center text-4xl font-bold font-serif text-white pt-4"> Registration will open in</h2>
-					<Countdown 
-						date="jul 18, 2021 13:00:00"
-					/>
-				</div>
-				<div className="relative md:h-1/2 h-96 flex flex-col justify-center items-center font-sans text-center">
+			<div>
+				<div className="relative h-96 flex flex-col justify-center items-center font-sans text-center">
 					<p className="font-bold text-4xl mb-10 text-ungu-400 z-20 fonr-serif"> Our Grand Theme </p>
 					<p className="text-lg max-w-xl text-ungu-300 z-20"> "Innovative Youths in Action: Emphasizing Public Value in Addressing Perpetual Social Issues” </p>
 					<div className="absolute w-56 h-20 -right-8 top-4 rounded-full py-6 bg-ungu-300 z-0"></div>
 					<div className="absolute w-56 h-20 -right-16 top-28 rounded-full py-6 bg-ungu-100 z-0"></div>
 				</div>
+				<div className="h-1/2 bg-ungu-400 my-auto py-8">
+					<h2 className="text-center text-4xl font-bold font-serif text-white pt-4"> Registration for AIPC will be open in</h2>
+					<Countdown 
+						date="jul 18, 2021 13:00:00"
+					/>
+				</div>
 			</div>
 			<div className="bg-ungu-100 justify-center py-5">
-				<h2 className="text-4xl text-ungu-400 font-bold text-center mb-5 font-serif">Our Pre-Events</h2>
+				<h2 className="text-4xl text-ungu-400 font-bold text-center mb-5 font-serif">Our Pre-Event Projects </h2>
 				<iframe 
 					className="mx-auto md:w-3/4 w-full px-4 mb-5"
 					title="episode 1" 
@@ -54,16 +52,16 @@ export default function Homepage () {
 
 				</iframe>
 			</div>
-			<div className="bg-putih py-12 md:px-20 px-8">
+			<div className="py-12 md:px-20 px-8">
 				<h2 className="text-4xl text-ungu-400 font-serif font-bold text-center my-8">Our Events</h2>
-				<div className="md:flex justify-evenly">
+				<div className="md:flex justify-evenly flex-wrap gap-1">
 					<Link className="md:w-1/4 w-1/4" to="/events/competition">
 						<div 
 							className="my-10 h-40 bg-putih rounded text-center bg-cover transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
 							style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340_960_720.jpg")` }}
 						> 
 							<div className="text-center font-semibold text-lg py-16">
-								Competition
+								ASEAN Innovative Competition (AIPC)
 							</div>
 						</div>
 					</Link>
@@ -73,35 +71,44 @@ export default function Homepage () {
 							style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2016/08/16/09/53/international-conference-1597531_960_720.jpg")` }}
 						> 
 							<div className="text-center font-semibold text-lg py-16 text-putih">
-								Conference
+								AIPC Conference, Public Action Conference
 							</div>
 						</div>
 					</Link>
-					<Link className="md:w-1/4 w-1/4" to="/events/festival">
+					<Link className="md:w-1/4 w-1/4" to="/events/side-events">
 						<div 
 							className="my-10 h-40 bg-putih rounded text-center bg-cover transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
 							style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2019/06/13/16/06/dance-4271941_960_720.jpg")` }}
 						> 
 							<div className="text-center font-semibold text-lg py-16">
-								Festival
+								Imprisoned Perspective of Local's Creations: A Breakthrough
+							</div>
+						</div>
+					</Link>
+					<Link className="md:w-1/4 w-1/4" to="/events/side-events">
+						<div 
+							className="my-10 h-40 bg-putih rounded text-center bg-cover transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+							style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2019/06/13/16/06/dance-4271941_960_720.jpg")` }}
+						> 
+							<div className="text-center font-semibold text-lg py-16">
+								Hum of The City:  Yogyakarta's Obscured Remedy
+							</div>
+						</div>
+					</Link>
+					<Link className="md:w-1/4 w-1/4" to="/events/side-events">
+						<div 
+							className="my-10 h-40 bg-putih rounded text-center bg-cover transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+							style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2019/06/13/16/06/dance-4271941_960_720.jpg")` }}
+						> 
+							<div className="text-center font-semibold text-lg py-16">
+								Children's Midsummer Night's Dream
 							</div>
 						</div>
 					</Link>
 				</div>
 			</div>
-			<div className="bg-oren py-16 px-12 md:px-16" id="mentors">
-				<p className="text-white font-bold text-5xl text-center mb-12 font-serif"> Mentors</p>
-				<div className="container mx-auto grid md:grid-cols-3 gap-4">
-					{mentorList.map( (mentor) =>
-						<MentorBox
-							name={mentor.name}
-							img={mentor.img}
-							desc1={mentor.desc1}
-							desc2={mentor.desc2}
-						/>
-					)}
-				</div>
-			</div>
+
+
 			
 			<div className="bg-putih py-16 px-12 md:px-16" id="partners">
 				<p className="text-ungu-400 font-bold text-5xl text-center mb-12 font-serif">Partners</p>

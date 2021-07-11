@@ -8,7 +8,7 @@ export default function Timeline(){
         <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-gray-100">
 
           <TimelineLeft 
-            date= "July 14 - August 14"
+            date= "19 july - 19 agustus"
             title= "Call for Abstracts"
           />
 
@@ -18,15 +18,7 @@ export default function Timeline(){
           />
           <TimelineLeft
             date= "September 11 "
-            title= "Announcement of Preliminary Round Winners"
-          />
-          <TimelineRight
-            date= "September 11"
-            title= "Re-registration Period & Technical Meeting"
-          />
-          <TimelineLeft
-            date= "September 11"
-            title= "AIPC Conference"
+            title= "AIPC Conference, Announcement of Preliminary Round Winners, and Technical Meeting"
           />
           <TimelineRight
             date= "September 13 - 27"
@@ -42,11 +34,7 @@ export default function Timeline(){
           />
           <TimelineLeft
             date= "October 9"
-            title= "Public Action Conference"
-          />
-          <TimelineRight
-            date= "October 9"
-            title= "Winner Announcement"
+            title= "Public Action Conference and Winners Announcement"
           />
         </div>
       </div>
