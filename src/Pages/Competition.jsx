@@ -77,7 +77,7 @@ export default function Competition () {
 
 
             <div className="w-screen h-6 bg-ungu-400"/>
-            <div className="flex flex-col justify-evenly items-center py-5">	
+            <div className="flex flex-col bg-white justify-evenly items-center py-5">	
                 <p className="py-5 text-4xl text-ungu-400 font-bold font-sans"> Objectives </p>
                 <div className="grid md:grid-cols-3 grid-cols-1 pb-5 md:pb-10">
                     <div className="flex flex-col items-center bg-putih shadow max-w-max rounded-lg text-center p-4 m-4">

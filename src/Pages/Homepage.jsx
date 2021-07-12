@@ -6,7 +6,7 @@ import Event from '../Components/Homepage/Event'
 
 export default function Homepage () {
     return(
-		<div className="overflow-hidden text-ungu-400">
+		<div className="overflow-hidden text-ungu-400 bg-white">
 			<div className="h-screen bg-putih flex items-center relative">
 				<div className="mx-auto z-40">
 					<p className="text-ungu-400 text-6xl md:text-7xl font-serif text-center"> Welcome to </p>	
