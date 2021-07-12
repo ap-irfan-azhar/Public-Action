@@ -1,9 +1,9 @@
-import { Widget } from "@typeform/embed-react"
-
 export default function AbstractSubmission () {
     return(
-        <div className="h-screen">
-            <Widget id="l7vwSoBv" style={{ width: '100vw', height: '100vh'} } className="my-form" />
-        </div>
+        <iframe 
+                title="Abstract SubmissionForm"
+                className="airtable-embed w-screen h-screen border-1" 
+                src="https://airtable.com/embed/shresndbZETkzqsTw?backgroundColor=orange" 
+            />
     )
 }
