@@ -24,7 +24,7 @@ function NavItems(props){
             <NavItem onChange={handleClick} url="/" screen= {props.screen} name="Home" />
             <NavItem onChange={handleClick} url="/about" screen= {props.screen} name="About" />
             <DropDown onChange={handleClick} name="Events" items={dropDownEvents}/>
-            <NavItem onChange={handleClick} url="/competition-booklet" screen= {props.screen} name="Booklet" />
+            <NavItem onChange={handleClick} url="/guidebook" screen= {props.screen} name="Guidebook" />
             <DropDown  onChange={handleClick} name="Registrations" items={dropDownRegistrations}/>
         </div>
 

@@ -1,16 +1,17 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/NavBar'
 import Footer from './Components/Footer'
-import ScrollToTop from "./Components/ScrollToTop"
-import About from "./Pages/About"
-import Competition from "./Pages/Competition"
-import Conference from "./Pages/Conference"
-import SideEvents from "./Pages/SideEvents"
-import Homepage from "./Pages/Homepage"
-import HowToRegister from "./Pages/HowToRegister"
-import RegistCompetition from "./Pages/RegistCompetition"
-import RegistConference from "./Pages/RegistConference"
-import AbstractSubmission from "./Pages/AbstractSubmission"
+import ScrollToTop from './Components/ScrollToTop'
+import About from './Pages/About'
+import Competition from './Pages/Competition'
+import Conference from './Pages/Conference'
+import SideEvents from './Pages/SideEvents'
+import Homepage from './Pages/Homepage'
+import HowToRegister from './Pages/HowToRegister'
+import RegistCompetition from './Pages/RegistCompetition'
+import RegistConference from './Pages/RegistConference'
+import AbstractSubmission from './Pages/AbstractSubmission'
+import Guidebook from './Pages/Guidebook'
 
 function App() {
   return (
@@ -40,12 +41,8 @@ function App() {
               <AbstractSubmission />
             </Route>
 
-            <Route path="/competition-booklet" exact>
-              <div className="block h-screen w-screen bg-putih text-5xl text-center font-serif">
-                <p className="my-40">
-                  Nanti Booklet lomba di-<i>embed</i> di laman ini
-                </p>
-              </div>
+            <Route path="/guidebook" exact>
+              <Guidebook />
             </Route>
                       
             
