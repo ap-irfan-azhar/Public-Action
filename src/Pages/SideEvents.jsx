@@ -4,25 +4,26 @@ import SideEvent from "../Components/Events/SideEvent"
 export default function SideEvents() {
     return(
         <div className="overflow-hidden">
-            <div className="bg-putih z-0 relative md:pt-5 pt-16 pb-28 md:px-10 px-5">
+            <div className="bg-putih z-0 relative md:pt-5 pt-16 pb-28 md:px-10 px-5 min-h-screen">
                 <h1 className="text-5xl text-ungu-300 text-center font-serif font-bold py-5 z-20">Public Festival</h1>
                 <div className="lg:flex lg:justify-evenly z-20">
                     <SideEvent 
                         title="Impresioned Prespective of Local's Creations: A Breaktrough"
                         desc="Rebranding the MSMEs around Special Region of Yogyakarta through photoshoot and video production."
-                    />
-                    
-                    <SideEvent 
-                        title="Children’s Midsummer Night’s Dream"
-                        desc="Conducting educational  activities for underprivileged children, such as storytelling, hand crafting, and so on. The committee will be  volunteers to carry out various educational activities."
-                    />
+                        img="1"
+                    />                 
 
                     <SideEvent 
                         title="Hum of The City: Yogyakarta’s Obscured Remedy"
                         desc="Presenting collaboration between street performers, traditional dancers, and students of Public Policy and Management."
+                        img="2"
                     />
 
-
+                    <SideEvent 
+                        title="Children’s Midsummer Night’s Dream"
+                        desc="Conducting educational  activities for underprivileged children, such as storytelling, hand crafting, and so on. The committee will be  volunteers to carry out various educational activities."
+                        img="3"
+                    />
 
                 </div>
                 <div className="absolute -z-10 md:w-60 md:h-60 w-40 h-40 bg-gradient-to-br from-ungu-100 to-ungu-400 rounded-full md:-top-10 top-28 md:-right-24 -right-20" > </div>

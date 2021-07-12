@@ -1,8 +1,8 @@
-import {Link} from 'react-router-dom'
 import Countdown from '../Components/Countdown/Countdown'
 import {partOf, partners, sponsors} from '../Data/Partners'
 import Partner from '../Components/Homepage/Partners/Partner'
 import {Object1} from '../Ornaments/Ornaments'
+import Event from '../Components/Homepage/Event'
 
 export default function Homepage () {
     return(
@@ -31,7 +31,7 @@ export default function Homepage () {
 				<div className="h-1/2 bg-ungu-400 my-auto py-8">
 					<h2 className="text-center text-4xl font-bold font-serif text-white pt-4"> Registration for AIPC will be open in</h2>
 					<Countdown 
-						date="jul 18, 2021 13:00:00"
+						date="jul 19, 2021 00:00:00"
 					/>
 				</div>
 			</div>
@@ -54,57 +54,34 @@ export default function Homepage () {
 			</div>
 			<div className="py-12 md:px-20 px-8">
 				<h2 className="text-4xl text-ungu-400 font-serif font-bold text-center my-8">Our Events</h2>
-				<div className="md:flex justify-evenly flex-wrap gap-1">
-					<Link className="md:w-1/4 w-1/4" to="/events/competition">
-						<div 
-							className="my-10 h-40 bg-putih rounded text-center bg-cover transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-							style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340_960_720.jpg")` }}
-						> 
-							<div className="text-center font-semibold text-lg py-16">
-								ASEAN Innovative Competition (AIPC)
-							</div>
-						</div>
-					</Link>
-					<Link className="md:w-1/4 w-1/4" to="/events/conference">
-						<div 
-							className="my-10 h-40 bg-putih rounded text-center bg-cover transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-							style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2016/08/16/09/53/international-conference-1597531_960_720.jpg")` }}
-						> 
-							<div className="text-center font-semibold text-lg py-16 text-putih">
-								AIPC Conference, Public Action Conference
-							</div>
-						</div>
-					</Link>
-					<Link className="md:w-1/4 w-1/4" to="/events/side-events">
-						<div 
-							className="my-10 h-40 bg-putih rounded text-center bg-cover transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-							style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2019/06/13/16/06/dance-4271941_960_720.jpg")` }}
-						> 
-							<div className="text-center font-semibold text-lg py-16">
-								Imprisoned Perspective of Local's Creations: A Breakthrough
-							</div>
-						</div>
-					</Link>
-					<Link className="md:w-1/4 w-1/4" to="/events/side-events">
-						<div 
-							className="my-10 h-40 bg-putih rounded text-center bg-cover transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-							style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2019/06/13/16/06/dance-4271941_960_720.jpg")` }}
-						> 
-							<div className="text-center font-semibold text-lg py-16">
-								Hum of The City:  Yogyakarta's Obscured Remedy
-							</div>
-						</div>
-					</Link>
-					<Link className="md:w-1/4 w-1/4" to="/events/side-events">
-						<div 
-							className="my-10 h-40 bg-putih rounded text-center bg-cover transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-							style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2019/06/13/16/06/dance-4271941_960_720.jpg")` }}
-						> 
-							<div className="text-center font-semibold text-lg py-16">
-								Children's Midsummer Night's Dream
-							</div>
-						</div>
-					</Link>
+				<div className="md:flex justify-evenly flex-wrap gap-1 text-putih">
+					<Event 
+						title= "ASEAN Innovative Competition (AIPC)"
+						img= "1"
+						teksGelap="true"
+						to="competition"
+					/>
+					<Event 
+						title= "AIPC Conference & Public Action Conference"
+						img= "2"
+						to="conferences"
+					/>
+					<Event 
+						title= "Imprisoned Perspective of Local's Creations: A Breakthrough"
+						img= "3"
+						teksGelap="true"
+						to="side-events"
+					/>
+					<Event 
+						title= "Hum of The City:  Yogyakarta's Obscured Remedy"
+						img= "4"
+						to="side-events"
+					/>
+					<Event 
+						title= "Children's Midsummer Night's Dream"
+						img= "5"
+						to="side-events"
+					/>
 				</div>
 			</div>
 
