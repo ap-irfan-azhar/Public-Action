@@ -1,5 +1,5 @@
-import {Object1, Group2} from "../Ornaments/Ornaments"
-import Timeline from '../Components/Homepage/Timeline/TimelineCompetition'
+import {Object1} from "../Ornaments/Ornaments"
+import Timeline from '../Components/Timeline/TimelineCompetition'
 import {LightBulbIcon, AcademicCap, BookOpen } from '../Components/Homepage/icons'
 import { Link } from 'react-router-dom'
 import MentorBox from '../Components/Homepage/Mentors/MentorBox'
@@ -19,7 +19,7 @@ export default function Competition () {
                             <div className="md:flex md:justify-evenly">
                                 <div 
                                     className="relative bg-cover mx-auto w-80 h-44 my-5 m-5 border-r-4 border-b-4 border-ungu-300 rounded-2xl shadow-lg mb-12" 
-                                    style={{ backgroundImage: `url("https://imgdb.in/iMCx.jpg")` }}>
+                                    style={{ backgroundImage: `url('${process.env.PUBLIC_URL}/images/competitions/comp-1.jpeg')` }}>
                                     <p className="absolute text-lg font-semibold md:inset-y-1/3 inset-y-1/2 inset-x-1/4 md:text-lg text-white font-serif font-semibold text-center z-10 mx-2">Fash Fashion</p>
                                     <div
                                         className="bg-ungu-300 absolute top-0 left-0 w-full h-full opacity-30 rounded-lg"
@@ -28,7 +28,7 @@ export default function Competition () {
 
                                 <div 
                                     className="relative bg-cover mx-auto w-80 h-44 my-5 m-5 border-r-4 border-b-4 border-ungu-300 rounded-2xl shadow-lg" 
-                                    style={{ backgroundImage: `url("https://imgdb.in/iMCx.jpg")` }}>
+                                    style={{ backgroundImage: `url('${process.env.PUBLIC_URL}/images/competitions/comp-2.jpeg')` }}>
                                     <p className="absolute text-lg font-semibold md:inset-y-1/3 inset-y-1/3 inset-x-1/4 md:text-lg text-white font-serif font-semibold text-center z-10 mx-2">Indigenous People</p>
                                     <div
                                         className="bg-ungu-300 absolute top-0 left-0 w-full h-full opacity-30 rounded-lg"
@@ -36,7 +36,7 @@ export default function Competition () {
                                 </div>
                                 <div 
                                     className="relative bg-cover mx-auto w-80 h-44 my-5 m-5 border-r-4 border-b-4 border-ungu-300 rounded-2xl shadow-lg" 
-                                    style={{ backgroundImage: `url("https://imgdb.in/iMCx.jpg")` }}>
+                                    style={{ backgroundImage: `url('${process.env.PUBLIC_URL}/images/competitions/comp-3.jpeg')` }}>
                                     <p className="absolute md:inset-y-1/3 inset-y-1/3 inset-x-1/5 md:text-lg text-white font-serif font-semibold text-center z-10 mx-2">Freedom of speech and democracy in the digital era</p>
                                     <div
                                         className="bg-ungu-300 absolute top-0 left-0 w-full h-full opacity-30 rounded-lg"
@@ -49,15 +49,15 @@ export default function Competition () {
 
                             <div className="flex justify-center mb-12">
                                 <Link to="/registration/competition">
-                                    <div className="px-2 py-1 m-3 w-24 text-center rounded shaddow bg-ungu-200 hover:bg-ungu-400 text-lg text-putih hover:text-white inline-block transition duration-500 ease-in-out transform hover:scale-125">
+                                    <div className="px-2 py-1 m-3 w-32 text-center rounded shaddow bg-ungu-200 hover:bg-ungu-400 text-lg text-putih hover:text-white inline-block transition duration-500 ease-in-out transform hover:scale-125">
                                         <p>Register</p>
                                     </div>
 
                                 </Link>
 
-                                <Link to="/competition-booklet">
-                                    <div className="px-2 py-1 m-3 w-24 text-center rounded shaddow bg-ungu-200 hover:bg-ungu-400 text-lg text-putih hover:text-white inline-block transition duration-500 ease-in-out transform hover:scale-125">
-                                        <p>Booklet</p>
+                                <Link to="/guidebook">
+                                    <div className="px-2 py-1 m-3 w-32 text-center rounded shaddow bg-ungu-200 hover:bg-ungu-400 text-lg text-putih hover:text-white inline-block transition duration-500 ease-in-out transform hover:scale-125">
+                                        <p>Guidebook</p>
                                     </div>
                                 </Link>
 

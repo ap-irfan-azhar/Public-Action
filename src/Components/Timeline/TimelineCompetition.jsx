@@ -13,7 +13,7 @@ export default function Timeline(){
           />
 
           <TimelineRight
-            date= "August 15 - 31 "
+            date= "August 20 - 31 "
             title= "Administrative Selection"
           />
           <TimelineLeft
