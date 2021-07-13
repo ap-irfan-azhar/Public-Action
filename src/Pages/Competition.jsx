@@ -12,15 +12,15 @@ export default function Competition () {
             <div className="bg-putih overflow-hidden" >
                     <div className="relative md:px-28 px-5 pt-5">
                         <div className="z-10 text-ungu-300">
-                            <h1 className="md:text-5xl text-4xl font-bold font-serif text-center my-5">ASEAN Innovative Policy Competition (AIPC)</h1>
-                            <p className="text-justify text-lg font-serif">
+                            <h1 className="md:text-5xl text-4xl font-bold font-serif text-center my-5 relative z-10">ASEAN Innovative Policy Competition (AIPC)</h1>
+                            <p className="text-justify text-lg font-serif relative z-10">
                             ASEAN Innovative Policy Competition (AIPC) is a competition held for undergraduate students across ASEAN to challenge their critical thinking skills regarding several social issues. AIPC provides exclusive conference for all the registrants and exclusive mentorship for the selected participants. This year, AIPC focuses on the three pillars of ASEAN: Political-Security Community (APC), Economic Community (AEC), and Socio-Cultural Community (ASC) with the topics as follows:
                             </p>
-                            <div className="md:flex md:justify-evenly">
+                            <div className="md:flex md:justify-evenly relative z-10">
                                 <div 
                                     className="relative bg-cover mx-auto w-80 h-44 my-5 m-5 border-r-4 border-b-4 border-ungu-300 rounded-2xl shadow-lg mb-12" 
                                     style={{ backgroundImage: `url('${process.env.PUBLIC_URL}/images/competitions/comp-1.jpeg')` }}>
-                                    <p className="absolute text-lg font-semibold md:inset-y-1/3 inset-y-1/2 inset-x-1/4 md:text-lg text-white font-serif font-semibold text-center z-10 mx-2">Fash Fashion</p>
+                                    <p className="absolute text-lg font-semibold md:inset-y-1/3 inset-y-1/2 inset-x-1/4 md:text-lg text-white font-serif font-semibold text-center z-10 mx-2">Fast Fashion</p>
                                     <div
                                         className="bg-ungu-300 absolute top-0 left-0 w-full h-full opacity-30 rounded-lg"
                                     />
@@ -37,36 +37,36 @@ export default function Competition () {
                                 <div 
                                     className="relative bg-cover mx-auto w-80 h-44 my-5 m-5 border-r-4 border-b-4 border-ungu-300 rounded-2xl shadow-lg" 
                                     style={{ backgroundImage: `url('${process.env.PUBLIC_URL}/images/competitions/comp-3.jpeg')` }}>
-                                    <p className="absolute md:inset-y-1/3 inset-y-1/3 inset-x-1/5 md:text-lg text-white font-serif font-semibold text-center z-10 mx-2">Freedom of speech and democracy in the digital era</p>
+                                    <p className="absolute md:inset-y-1/3 inset-y-1/3 inset-x-1/5 md:text-lg text-white font-serif font-semibold text-center z-10 mx-2">Freedom of Speech and Democracy in the Digital Era</p>
                                     <div
                                         className="bg-ungu-300 absolute top-0 left-0 w-full h-full opacity-30 rounded-lg"
                                     />
                                 </div>
                             </div>
-                            <p className="text-justify font-serif text-lg">
-                            by involving youths and experts from different countrie, we hope to broaden the perspectives regarding the aforementioned issues
+                            <p className="text-justify text-lg font-serif relative z-10">
+                            by involving youths and experts from different countries, we hope to broaden the perspectives regarding the aforementioned issues
                             </p>
 
-                            <div className="flex justify-center mb-12">
+                            <div className="flex justify-center mt-6 mb-16 font-semibold relative z-10">
                                 <Link to="/registration/competition">
-                                    <div className="px-2 py-1 m-3 w-32 text-center rounded shaddow bg-ungu-200 hover:bg-ungu-400 text-lg text-putih hover:text-white inline-block transition duration-500 ease-in-out transform hover:scale-125">
+                                    <div className="px-1 py-1 m-3 w-32 text-center rounded-lg shaddow bg-gradient-to-br from-ungu-400 to-ungu-200 hover:from-ungu-100 hover:to-ungu-300 hover:text-ungu-400 text-lg text-putih hover:text-white inline-block transition duration-500 ease-in-out transform hover:scale-125">
                                         <p>Register</p>
                                     </div>
 
                                 </Link>
 
                                 <Link to="/guidebook">
-                                    <div className="px-2 py-1 m-3 w-32 text-center rounded shaddow bg-ungu-200 hover:bg-ungu-400 text-lg text-putih hover:text-white inline-block transition duration-500 ease-in-out transform hover:scale-125">
+                                    <div className="px-1 py-1 m-3 w-32 text-center rounded-lg shaddow bg-gradient-to-br from-ungu-200 to-ungu-400 hover:from-ungu-300 hover:to-ungu-100 hover:text-ungu-400 text-lg text-putih hover:text-white inline-block transition duration-500 ease-in-out transform hover:scale-125">
                                         <p>Guidebook</p>
                                     </div>
                                 </Link>
 
                             </div>
                                 <div className="hidden md:block absolute -top-12 -left-44 transform -rotate-90">
-                                        <Object1 />
+                                        <Object1 width="400" />
                                 </div>
-                                <div className="absolute -right-32 -bottom-16 transform -rotate-12 hidden md:block">
-                                        <Object1 />
+                                <div className="absolute -right-44 -bottom-40 md:-bottom-32 transform rotate-90  md:block">
+                                        <Object1 width="500" />
                                 </div>
                             </div>
 

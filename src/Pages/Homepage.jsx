@@ -7,8 +7,8 @@ import Event from '../Components/Homepage/Event'
 export default function Homepage () {
     return(
 		<div className="overflow-hidden text-ungu-400 bg-white">
-			<div className="h-screen bg-putih flex items-center relative">
-				<div className="mx-auto z-40">
+			<div className="h-screen overflow-hidden bg-putih flex items-center relative">
+				<div className="mx-auto z-40 relative z-10">
 					<p className="text-ungu-400 text-6xl md:text-7xl font-serif text-center"> Welcome to </p>	
 					<img src={process.env.PUBLIC_URL + 'images/logo-pa-icon.png'} alt="logo public action" className="h-96 mx-auto " />
 				</div>
@@ -16,20 +16,20 @@ export default function Homepage () {
 				<div className="absolute z-10 md:w-80 md:h-80 w-52 h-52 bg-gradient-to-br from-ungu-100 to-ungu-400 rounded-full -top-20 md:-left-12 -left-20" > </div>
 				<div className="absolute hidden md:block z-10 md:w-52 md:h-80 w-44 h-64 bg-ungu-200 opacity-75 rounded-full -top-20 -right-16" > </div>
 				<div className="absolute hidden md:block z-10 md:w-72 md:h-56 w-56 h-52 bg-ungu-200 opacity-75 py-2 rounded-full md:top-20 -top-10 -right-24" > </div>
-				<div className=" md:hidden absolute -top-16 -right-32 text-ungu-400">
-					<Object1 />
+				<div className=" md:hidden absolute -bottom-12 -right-36 transform rotate-90">
+					<Object1 width="400"/>
 				</div>
         
 			</div>
 			<div>
 				<div className="relative h-96 flex flex-col justify-center items-center font-sans text-center">
 					<p className="font-bold text-4xl mb-10 text-ungu-400 z-20 fonr-serif"> Our Grand Theme </p>
-					<p className="text-lg max-w-xl text-ungu-300 z-20"> "Innovative Youths in Action: Emphasizing Public Value in Addressing Perpetual Social Issues” </p>
+					<p className="text-lg max-w-xl text-ungu-300 z-20 font-semibold px-2"> "Innovative Youths in Action: Emphasizing Public Value in Addressing Perpetual Social Issues” </p>
 					<div className="absolute w-56 h-20 -right-8 top-4 rounded-full py-6 bg-ungu-300 z-0"></div>
 					<div className="absolute w-56 h-20 -right-16 top-28 rounded-full py-6 bg-ungu-100 z-0"></div>
 				</div>
 				<div className="h-1/2 bg-ungu-400 my-auto py-8">
-					<h2 className="text-center text-4xl font-bold font-serif text-white pt-4"> Registration for AIPC will be open in</h2>
+					<h2 className="text-center text-4xl font-bold font-serif text-white pt-4 mb-12 md:mb-0"> Registration for AIPC will be open in</h2>
 					<Countdown 
 						date="jul 19, 2021 00:00:00"
 					/>
@@ -68,13 +68,13 @@ export default function Homepage () {
 					/>
 					<Event 
 						title= "Imprisoned Perspective of Local's Creations: A Breakthrough"
-						img= "3"
-						teksGelap="true"
+						img= "4"
 						to="side-events"
 					/>
 					<Event 
 						title= "Hum of The City:  Yogyakarta's Obscured Remedy"
-						img= "4"
+						img= "3"
+						teksGelap="true"
 						to="side-events"
 					/>
 					<Event 
