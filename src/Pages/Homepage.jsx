@@ -1,5 +1,5 @@
 import Countdown from '../Components/Countdown/Countdown'
-import {partOf, partners, sponsors} from '../Data/Partners'
+import {partOf, mediaPartners, sponsors} from '../Data/Partners'
 import Partner from '../Components/Homepage/Partners/Partner'
 import {Object1} from '../Ornaments/Ornaments'
 import Event from '../Components/Homepage/Event'
@@ -90,38 +90,38 @@ export default function Homepage () {
 			<div className="bg-putih py-16 px-12 md:px-16" id="partners">
 				<p className="text-ungu-400 font-bold text-5xl text-center mb-12 font-serif">Partners</p>
 
-				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">Subjudul</p>
-				<div className="container mx-auto grid md:grid-cols-4 grid-cols-2 gap-4 items-center content-center mb-20">
+				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">Part of</p>
+				<div className="container mx-auto flex flex-wrap justify-evenly gap-3 items-center mb-20">
 					{partOf.map((partOf) => 
 						<Partner 
 							name={partOf.name}
 							img={partOf.img}
-							size_sm="36"
-							size_md="60"
+							width={partOf.widht}
+							height={partOf.height}
 						/>
 					)}
 				</div>
 
-				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">Partners</p>
-				<div className="container mx-auto grid md:grid-cols-5 grid-cols-3 gap-4 items-center content-center mb-20">
-					{partners.map((partners) => 
+				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">Media Partners</p>
+				<div className="md:container mx-auto flex flex-wrap justify-evenly gap-3 mb-20">
+					{mediaPartners.map((mediaPartner) => 
 						<Partner 
-							name={partners.name}
-							img={partners.img}
-							size_sm="24"
-							size_md="40"
+							name={mediaPartner.name}
+							img={mediaPartner.img}
+							width={mediaPartner.widht}
+							height={mediaPartner.height}
 						/>
-					)}
+						)}
 				</div>
 
 				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">Sponsors</p>
-				<div className="container mx-auto grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-4 items-center content-center">
-					{sponsors.map((sponsors) => 
+				<div className="container mx-auto flex flex-wrap justify-evenly gap-3 items-center content-center">
+					{sponsors.map((sponsor) => 
 						<Partner 
-							name={sponsors.name}
-							img={sponsors.img}
-							size_sm={40}
-							size_md={48}
+							name={sponsor.name}
+							img={sponsor.img}
+							width={sponsor.widht}
+							height={sponsor.height}
 						/>
 					)}
 				</div>
