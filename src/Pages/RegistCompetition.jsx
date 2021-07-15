@@ -1,7 +1,7 @@
 import Countdown from "../Components/Countdown/Countdown";
 
 export default function Registration () {
-    let openRegistDate = new Date(new Date("jul 19, 2021 00:00:00").toLocaleString("en-US", {timeZone: "utc"})).getTime();
+    let openRegistDate = new Date(new Date("jul 15, 2021 00:00:00").toLocaleString("en-US", {timeZone: "utc"})).getTime();
     let now = new Date(new Date().toLocaleString("en-US", {timeZone: "utc"})).getTime();
     let distance = openRegistDate - now;
 
