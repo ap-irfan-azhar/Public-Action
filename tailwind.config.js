@@ -18,7 +18,7 @@ module.exports = {
         putih: '#f0ebce'
       },
       fontFamily: {
-        serif: ['Averia Serif', ...defautTheme.fontFamily.serif],
+        serif: ['Recoleta','Averia Serif', ...defautTheme.fontFamily.serif],
         sans: ['Montserrat', ...defautTheme.fontFamily.sans]
       },
       zIndex: {
