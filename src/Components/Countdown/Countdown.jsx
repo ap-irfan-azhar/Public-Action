@@ -3,10 +3,10 @@ import {useState} from 'react'
 
 
 export default function Countdown (props) {
-	const [timerSeconds, setSeconds] = useState(0)	
-	const [timerMinutes, setMinutes] = useState(0)	
-	const [timerHours, setHours] = useState(0)	
-	const [timerDays, setDays] = useState(0)
+	const [timerSeconds, setSeconds] = useState("--")	
+	const [timerMinutes, setMinutes] = useState("--")	
+	const [timerHours, setHours] = useState("--")	
+	const [timerDays, setDays] = useState("--")
 		
 	
 	let countDownDate = new Date(new Date(props.date).toLocaleString("en-US", {timeZone: "utc"})).getTime();
@@ -51,34 +51,58 @@ export default function Countdown (props) {
 	}, 1000)
 
 	return(
-		<div className="grid md:grid-cols-4 grid-cols-2 gap-y-8 md:pt-12 justify-items-center">
+		<div className={`grid md:grid-cols-4 grid-cols-2 gap-y-8 md:pt-12 justify-items-center ${props.isDark ? "text-white": "text-ungu-400" }`}>
 			<div className="max-w-max justify-center my-auto">
 				<div className="flex">
-					<CountdownBox number={timerDays.toString().slice(0,1)} />
-					<CountdownBox number={timerDays.toString().slice(1,2)} />
+					<CountdownBox
+						isDark={props.isDark}
+						number={timerDays.toString().slice(0,1)} 
+					/>
+					<CountdownBox
+						isDark={props.isDark}
+						number={timerDays.toString().slice(1,2)} 
+					/>
 				</div>
-				<p className="text-white text-center md:text-5xl text-4xl font-semibold text-center"> Days </p>
+				<p className="text-center md:text-5xl text-4xl font-semibold text-center"> Days </p>
 			</div>
 			<div className="max-w-max justify-center my-auto">
 				<div className="flex">
-					<CountdownBox number={timerHours.toString().slice(0,1)} />
-					<CountdownBox number={timerHours.toString().slice(1,2)} />
+					<CountdownBox
+						isDark={props.isDark}
+						number={timerHours.toString().slice(0,1)} 
+					/>
+					<CountdownBox
+						isDark={props.isDark}
+						number={timerHours.toString().slice(1,2)} 
+					/>
 				</div>
-				<p className="text-white text-center md:text-5xl text-4xl font-semibold text-center"> Hours</p>
+				<p className="text-center md:text-5xl text-4xl font-semibold text-center"> Hours</p>
 			</div>
 			<div className="max-w-max justify-center my-auto">
 				<div className="flex">
-					<CountdownBox number={timerMinutes.toString().slice(0,1)} />
-					<CountdownBox number={timerMinutes.toString().slice(1,2)} />
+					<CountdownBox
+						isDark={props.isDark}
+						number={timerMinutes.toString().slice(0,1)} 
+					/>
+					<CountdownBox
+						isDark={props.isDark}
+						number={timerMinutes.toString().slice(1,2)} 
+					/>
 				</div>
-				<p className="text-white text-center md:text-5xl text-4xl font-semibold text-center"> Minutes </p>
+				<p className="text-center md:text-5xl text-4xl font-semibold text-center"> Minutes </p>
 			</div>
 			<div className="max-w-max justify-center my-auto">
 				<div className="flex">
-					<CountdownBox number={timerSeconds.toString().slice(0,1)} />
-					<CountdownBox number={timerSeconds.toString().slice(1,2)} />
+					<CountdownBox
+						isDark={props.isDark}
+						number={timerSeconds.toString().slice(0,1)} 
+					/>
+					<CountdownBox
+						isDark={props.isDark}
+						number={timerSeconds.toString().slice(1,2)} 
+					/>
 				</div>
-				<p className="text-white text-center md:text-5xl text-4xl font-semibold text-center"> Seconds </p>
+				<p className="text-center md:text-5xl text-4xl font-semibold text-center"> Seconds </p>
 			</div>
 		</div>
 
