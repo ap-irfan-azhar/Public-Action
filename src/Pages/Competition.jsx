@@ -99,9 +99,9 @@ export default function Competition () {
 				<Timeline />
 			</div>
 
-            <div className="bg-oren py-16 px-12 md:px-16" id="mentors">
+            <div className="bg-oren py-16 px-12 md:px-16">
                 <p className="text-white font-bold text-5xl text-center mb-12 font-serif"> Mentors</p>
-                <div className="container mx-auto grid md:grid-cols-3 gap-4">
+                <div className="container flex flex-wrap gap-8 justify-evenly">
                     {mentorList.map( (mentor) =>
                         <MentorBox
                             name={mentor.name}

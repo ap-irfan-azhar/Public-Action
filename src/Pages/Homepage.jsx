@@ -9,7 +9,7 @@ export default function Homepage () {
 		<div className="overflow-hidden text-ungu-400 bg-white">
 			<div className="h-screen overflow-hidden bg-putih flex items-center relative">
 				<div className="mx-auto z-40 relative z-10">
-					<p className="text-ungu-400 text-6xl md:text-7xl font-serif text-center"> Welcome to </p>	
+					<p className="text-ungu-200 text-6xl md:text-7xl font-serif font-black text-center"> Welcome to </p>	
 					<img src={process.env.PUBLIC_URL + 'images/logo-pa-icon.png'} alt="logo public action" className="h-96 mx-auto " />
 				</div>
 				<div style={{backgroundImage: `url(${process.env.PUBLIC_URL}/svg/pattern1.svg)`}} className="absolute z-0 w-full h-full opacity-50"></div>
@@ -28,9 +28,10 @@ export default function Homepage () {
 					<div className="absolute w-56 h-20 -right-8 top-4 rounded-full py-6 bg-ungu-300 z-0"></div>
 					<div className="absolute w-56 h-20 -right-16 top-28 rounded-full py-6 bg-ungu-100 z-0"></div>
 				</div>
-				<div className="h-1/2 bg-ungu-400 my-auto py-8">
+				<div className="h-1/2 bg-ungu-400 my-auto pt-8 pb-12">
 					<h2 className="text-center text-4xl font-bold font-serif text-white pt-4 mb-12 md:mb-0"> Registration for AIPC will be open in</h2>
-					<Countdown 
+					<Countdown
+						isDark={true} 
 						date="jul 19, 2021 00:00:00"
 					/>
 				</div>
@@ -88,7 +89,7 @@ export default function Homepage () {
 
 			
 			<div className="bg-putih py-16 px-12 md:px-16" id="partners">
-				<p className="text-ungu-400 font-bold text-5xl text-center mb-12 font-serif">Partners</p>
+				<p className="text-ungu-400 font-bold text-4xl text-center mb-12 font-serif">Partners</p>
 
 				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">Part of</p>
 				<div className="container mx-auto flex flex-wrap justify-evenly gap-3 items-center mb-20">

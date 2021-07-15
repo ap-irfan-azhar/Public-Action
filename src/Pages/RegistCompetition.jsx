@@ -8,10 +8,10 @@ export default function Registration () {
     if (distance > 0){
         return(
             <div className="h-screen bg-putih md:px-16">
-                <h1 className="text-center text-4xl font-bold font-serif text-ungu-400 mt-20 mb-16">AIPC Registration will open in</h1>
+                <h1 className="text-center text-4xl font-bold font-serif text-ungu-400 mt-20 mb-16">AIPC Registration will be open in</h1>
                 <Countdown
                     isDark={false}
-                    date= "jul 19, 2021 13:00:00"
+                    date= "jul 19, 2021 00:00:00"
                 />
 
             </div>
