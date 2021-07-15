@@ -22,7 +22,7 @@ export default function Homepage () {
         
 			</div>
 			<div>
-				<div className="relative h-96 flex flex-col justify-center items-center font-sans text-center">
+				<div className="relative h-96 flex flex-col justify-center items-center font-sans text-center bg-contain md:bg-auto bg-opacity-35" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/svg/topography.svg)`}}>
 					<p className="font-bold text-4xl mb-10 text-ungu-400 z-20 fonr-serif"> Our Grand Theme </p>
 					<p className="text-lg max-w-xl text-ungu-300 z-20 font-semibold px-2"> "Innovative Youths in Action: Emphasizing Public Value in Addressing Perpetual Social Issues” </p>
 					<div className="absolute w-56 h-20 -right-8 top-4 rounded-full py-6 bg-ungu-300 z-0"></div>
@@ -52,7 +52,7 @@ export default function Homepage () {
 
 				</iframe>
 			</div>
-			<div className="py-12 md:px-20 px-8">
+			<div className="py-12 md:px-20 px-8 bg-opacity-50" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/svg/pattern2.svg)`}}>
 				<h2 className="text-4xl text-ungu-400 font-serif font-bold text-center my-8">Our Events</h2>
 				<div className="md:flex justify-evenly flex-wrap gap-1 text-putih">
 					<Event 
