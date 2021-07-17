@@ -23,16 +23,16 @@ export default function Homepage () {
 			</div>
 			<div>
 				<div className="relative h-96 flex flex-col justify-center items-center font-sans text-center bg-contain md:bg-auto bg-opacity-35" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/svg/topography.svg)`}}>
-					<p className="font-bold text-4xl mb-10 text-ungu-400 z-20 fonr-serif"> Our Grand Theme </p>
+					<p className="font-bold text-4xl mb-10 text-ungu-400 z-20 font-serif"> Our Grand Theme </p>
 					<p className="text-lg max-w-xl text-ungu-300 z-20 font-semibold px-2"> "Innovative Youths in Action: Emphasizing Public Value in Addressing Perpetual Social Issues” </p>
 					<div className="absolute w-56 h-20 -right-8 top-4 rounded-full py-6 bg-ungu-300 z-0"></div>
 					<div className="absolute w-56 h-20 -right-16 top-28 rounded-full py-6 bg-ungu-100 z-0"></div>
 				</div>
 				<div className="h-1/2 bg-ungu-400 my-auto pt-8 pb-12">
-					<h2 className="text-center text-4xl font-bold font-serif text-white pt-4 mb-12 md:mb-0"> Registration for AIPC will be open in</h2>
+					<h2 className="text-center text-4xl font-bold font-serif text-white pt-4 mb-12 md:mb-0"> Registration for AIPC will be closed in</h2>
 					<Countdown
 						isDark={true} 
-						date="jul 19, 2021 00:00:00"
+						date="aug 14, 2021 23:59:59"
 					/>
 				</div>
 			</div>
@@ -89,43 +89,53 @@ export default function Homepage () {
 
 			
 			<div className="bg-putih py-16 px-12 md:px-16" id="partners">
-				<p className="text-ungu-400 font-bold text-4xl text-center mb-12 font-serif">Partners</p>
 
-				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">Part of</p>
-				<div className="container mx-auto flex flex-wrap justify-evenly gap-3 items-center mb-20">
-					{partOf.map((partOf) => 
-						<Partner 
-							name={partOf.name}
-							img={partOf.img}
-							width={partOf.widht}
-							height={partOf.height}
-						/>
-					)}
-				</div>
-
-				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">Media Partners</p>
-				<div className="md:container mx-auto flex flex-wrap justify-evenly gap-3 mb-20">
-					{mediaPartners.map((mediaPartner) => 
-						<Partner 
-							name={mediaPartner.name}
-							img={mediaPartner.img}
-							width={mediaPartner.widht}
-							height={mediaPartner.height}
-						/>
+				<div className="my-5 md:mx-16 mx-0">
+					<p className="text-ungu-400 font-bold text-4xl text-center mb-6 font-serif">Part of</p>
+					<div className="flex flex-wrap justify-evenly gap-3 items-center mb-20">
+						{partOf.map((partOf) => 
+							<Partner 
+								name={partOf.name}
+								img={partOf.img}
+								width={partOf.widht}
+								height={partOf.height}
+							/>
 						)}
+					</div>
 				</div>
+				
+				<div className="my-5 md:mx-16">
+					<p className="text-ungu-400 font-bold text-4xl text-center mb-6 font-serif">Media Partners</p>
+					<div className="mx-auto flex flex-wrap justify-evenly gap-3 mb-20">
+						{mediaPartners.map((mediaPartner) => 
+							<Partner 
+								name={mediaPartner.name}
+								img={mediaPartner.img}
+								width={mediaPartner.widht}
+								height={mediaPartner.height}
+							/>
+							)}
+					</div>
 
-				<p className="text-ungu-400 font-semibold- text-4xl text-center mb-4">Sponsors</p>
-				<div className="container mx-auto flex flex-wrap justify-evenly gap-3 items-center content-center">
-					{sponsors.map((sponsor) => 
-						<Partner 
-							name={sponsor.name}
-							img={sponsor.img}
-							width={sponsor.widht}
-							height={sponsor.height}
-						/>
-					)}
 				</div>
+				
+				<div className="my-5 md:mx-16">
+					<p className="text-ungu-400 font-bold text-4xl text-center mb-6 font-serif">Sponsors</p>
+					<div className="flex flex-wrap justify-evenly gap-3 items-center content-center">
+						{sponsors.map((sponsor) => 
+							<Partner 
+								name={sponsor.name}
+								img={sponsor.img}
+								width={sponsor.widht}
+								height={sponsor.height}
+							/>
+						)}
+					</div>
+
+				</div>
+				
+
+
 				
 			</div>
     </div>

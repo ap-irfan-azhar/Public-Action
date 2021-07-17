@@ -37,7 +37,7 @@ export default function Footer() {
                 </div>
 
             </div>
-            <p className="w-max mx-auto my-5">&copy; 2021</p>
+            <a href="mailto:muhammad.irfan.azhar@mail.ugm.ac.id" target="_blank" rel="noreferrer"><p className="w-max mx-auto my-5">&copy; 2021</p></a>
         </div>
     )
 }

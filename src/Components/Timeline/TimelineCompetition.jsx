@@ -8,7 +8,7 @@ export default function Timeline(){
         <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-gray-100">
 
           <TimelineLeft 
-            date= "19 july - 19 agustus"
+            date= "19 July - 19 August"
             title= "Call for Abstracts"
           />
 

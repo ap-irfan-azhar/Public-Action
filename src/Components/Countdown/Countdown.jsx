@@ -9,7 +9,7 @@ export default function Countdown (props) {
 	const [timerDays, setDays] = useState("--")
 		
 	
-	let countDownDate = new Date(new Date(props.date).toLocaleString("en-US", {timeZone: "utc"})).getTime();
+	let countDownDate = new Date(new Date(`${props.date} gmt+7`).toLocaleString("en-US", {timeZone: "Asia/Jakarta"})).getTime();
 	
 	let startCountDown = setInterval( function() {
 	
