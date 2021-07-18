@@ -7,9 +7,11 @@ export default function Guidebook(){
 				<meta name="description" content="Public Action 2021 Guidebook"></meta>
 				<meta name="keywords" content="Public Action, UGM, Public policy, public management, competition, guidebook"></meta>
 			</Helmet>    
-            <p className="py-40">
-                Nanti Booklet lomba di-<i>embed</i> di laman ini
-            </p>
+            <iframe
+                title="Abstract Guidebook Public Action 2021" 
+                src="https://drive.google.com/file/d/1wyn5_ERawyK90Y13EWb7faWZ43ZRDEmA/preview" 
+                className="w-screen h-screen"
+            />
         </div>
     )
 }

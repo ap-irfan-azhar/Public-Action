@@ -12,7 +12,7 @@ export default function Registration () {
                     <meta name="description" content="ASEAN Innovative Policy Competition registration"></meta>
                     <meta name="keywords" content="Public Action, UGM, Public policy, public management, competition, guidebook"></meta>
                 </Helmet> 
-                <h1 className="absolute md:text-7xl text-5xl font-bold font-serif text-ungu-200 inset-y-1/3 w-screen left-0 text-center">Loading...</h1>
+                <p className="absolute md:text-7xl text-5xl md:tracking-widest font-bold font-serif text-ungu-200 inset-y-1/3 w-screen left-0 text-center">Loading...</p>
                 <iframe 
                     title="Competition Registration Form"
                     className="airtable-embed w-screen h-screen border-1 absolute" 

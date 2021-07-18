@@ -110,7 +110,7 @@ export default function Homepage () {
 					</div>
 				</div>
 				
-				<div className="my-5 md:mx-16">
+				<div className="my-5 md:mx-16 hidden">
 					<p className="text-ungu-400 font-bold text-4xl text-center mb-6 font-serif">Media Partners</p>
 					<div className="mx-auto flex flex-wrap justify-evenly gap-3 mb-20">
 						{mediaPartners.map((mediaPartner) => 
@@ -125,7 +125,7 @@ export default function Homepage () {
 
 				</div>
 				
-				<div className="my-5 md:mx-16">
+				<div className="my-5 md:mx-16 hidden">
 					<p className="text-ungu-400 font-bold text-4xl text-center mb-6 font-serif">Sponsors</p>
 					<div className="flex flex-wrap justify-evenly gap-3 items-center content-center">
 						{sponsors.map((sponsor) => 
