@@ -1,8 +1,14 @@
 import {Object1, Group2, Object2} from "../Ornaments/Ornaments"
+import { Helmet } from 'react-helmet'
 
 export default function About () {
     return(
         <div className="overflow-hidden">
+            <Helmet>
+				<title>About</title>
+				<meta name="description" content="About Public Action UGM 2021"></meta>
+				<meta name="keywords" content="Public Action, UGM, Public policy, public management"></meta>
+			</Helmet>
             <div className="min-h-screen bg-putih relative">
                 <div className="m-auto md:mx-32 mx-4 text-ungu-300 py-10 text-justify text-lg pb-24 md:pb-0 relative z-10">
                     <div className="flex mx-auto justify-left">

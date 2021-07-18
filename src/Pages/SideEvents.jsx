@@ -1,11 +1,17 @@
 import {Object1} from "../Ornaments/Ornaments"
 import SideEvent from "../Components/Events/SideEvent"
+import { Helmet } from 'react-helmet'
 
 export default function SideEvents() {
     return(
         <div className="overflow-hidden">
+            <Helmet>
+				<title>Side Events</title>
+				<meta name="description" content="Side Events of Public Action 2021"></meta>
+				<meta name="keywords" content="Public Action, UGM, Public policy, public management, competition"></meta>
+			</Helmet>
             <div className="bg-putih z-0 relative md:pt-5 pt-16 pb-28 md:px-10 px-5 min-h-screen">
-                <h1 className="text-5xl text-ungu-300 text-center font-serif font-bold py-5 z-20">Public Festival</h1>
+                <h1 className="text-5xl text-ungu-300 text-center font-serif font-bold py-5 z-20">Side Events</h1>
                 <div className="lg:flex lg:justify-evenly z-20">
                     <SideEvent 
                         title="Impresioned Prespective of Local's Creations: A Breaktrough"

@@ -3,13 +3,19 @@ import {partOf, mediaPartners, sponsors} from '../Data/Partners'
 import Partner from '../Components/Homepage/Partners/Partner'
 import {Object1} from '../Ornaments/Ornaments'
 import Event from '../Components/Homepage/Event'
+import { Helmet } from 'react-helmet'
 
 export default function Homepage () {
     return(
 		<div className="overflow-hidden text-ungu-400 bg-white">
+			<Helmet>
+				<title>Public Action 2021</title>
+				<meta name="description" content="Public Action UGM 2021"></meta>
+				<meta name="keywords" content="Public Action, UGM, Public policy, public management"></meta>
+			</Helmet>
 			<div className="h-screen overflow-hidden bg-putih flex items-center relative">
 				<div className="mx-auto z-40 relative z-10">
-					<p className="text-ungu-200 text-6xl md:text-7xl font-serif font-black text-center"> Welcome to </p>	
+					<h1 className="text-ungu-200 text-6xl md:text-7xl font-serif font-black text-center"> Welcome to </h1>	
 					<img src={process.env.PUBLIC_URL + 'images/logo-pa-icon.png'} alt="logo public action" className="h-96 mx-auto " />
 				</div>
 				<div style={{backgroundImage: `url(${process.env.PUBLIC_URL}/svg/pattern1.svg)`}} className="absolute z-0 w-full h-full opacity-50"></div>

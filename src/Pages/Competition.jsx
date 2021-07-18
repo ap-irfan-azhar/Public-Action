@@ -4,11 +4,17 @@ import {LightBulbIcon, AcademicCap, BookOpen } from '../Components/Homepage/icon
 import { Link } from 'react-router-dom'
 import MentorBox from '../Components/Homepage/Mentors/MentorBox'
 import {mentors as mentorList} from '../Data/Mentors'
+import { Helmet } from 'react-helmet'
 
 
 export default function Competition () {
     return(
         <div className="overflow-hidden">
+            <Helmet>
+				<title>ASEAN Innovative Policy Competition</title>
+				<meta name="description" content="ASEAN Innovative Policy Competition 2021 (AIPC)"></meta>
+				<meta name="keywords" content="Public Action, UGM, Public policy, public management, competition"></meta>
+			</Helmet>
             <div className="bg-putih overflow-hidden" >
                     <div className="relative md:px-28 px-5 pt-5">
                         <div className="z-10 text-ungu-300">

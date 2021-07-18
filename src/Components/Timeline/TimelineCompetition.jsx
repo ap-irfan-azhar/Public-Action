@@ -9,7 +9,7 @@ export default function Timeline(){
 
           <TimelineLeft 
             date= "19 July - 19 August"
-            title= "Call for Abstracts"
+            title= "Open Registration"
           />
 
           <TimelineRight

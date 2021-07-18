@@ -22,13 +22,13 @@ export default function Footer() {
                     <a  className="hover:text-ungu-100" href="https://id.linkedin.com/company/public-action-ugm" target="_blank" rel="noreferrer"><p> <FontAwesomeIcon icon={faLinkedinIn} /> Public Action UGM </p></a>
                     <a  className="hover:text-ungu-100" href="https://bit.ly/PAsPodcast"target="_blank"   rel="noreferrer"><p> <FontAwesomeIcon icon={faSpotify} />  Podcast </p></a>
                 </div>
-                <div className="mx-auto my-5 text-sm w-max pb-5 text-left">
+                <div className="mx-auto my-5 text-sm w-max text-left">
                     <p className="font-semibold text-lg text-center">External Sites</p>
                     <a className="hover:text-ungu-100 my-3 " href="https://gamapi.fisipol.ugm.ac.id/" target="_blank" rel="noreferrer"> Gamapi</a>
                     <br />
                     <a className="hover:text-ungu-100 my-3" href="https://mkp.fisipol.ugm.ac.id/en/" target="_blank" rel="noreferrer"> Public Policy and Management </a>
                     
-                    <div className="mx-auto my-5 text-sm w-max pb-5 text-left">
+                    <div className="mx-auto my-5 text-sm w-max text-left">
                         <p className="font-semibold text-lg text-center">Contact Us</p>
                         <a href="mailto:publicaction-mkp.fisipol@ugm.ac.id" target="_blank" rel="noreferrer">
                         <p className="hover:text-ungu-100"><FontAwesomeIcon icon={faEnvelope} /> publicaction-mkp.fisipol@ugm.ac.id</p>
