@@ -25,6 +25,9 @@ module.exports = {
         '-10': '-10',
         '-20': '-20',
       },
+      fontSize: {
+        '2xs': '0.5rem'
+      }
   },
   variants: {
     extend: {},

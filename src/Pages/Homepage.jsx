@@ -98,7 +98,7 @@ export default function Homepage () {
 
 				<div className="my-5 md:mx-16 mx-0">
 					<p className="text-ungu-400 font-bold text-4xl text-center mb-6 font-serif">Part of</p>
-					<div className="flex flex-wrap justify-evenly gap-3 items-center mb-20">
+					<div className="flex flex-wrap justify-evenly gap-3 items-center mb-32">
 						{partOf.map((partOf) => 
 							<Partner 
 								name={partOf.name}
@@ -110,24 +110,9 @@ export default function Homepage () {
 					</div>
 				</div>
 				
-				<div className="my-5 md:mx-16 hidden">
-					<p className="text-ungu-400 font-bold text-4xl text-center mb-6 font-serif">Media Partners</p>
-					<div className="mx-auto flex flex-wrap justify-evenly gap-3 mb-20">
-						{mediaPartners.map((mediaPartner) => 
-							<Partner 
-								name={mediaPartner.name}
-								img={mediaPartner.img}
-								width={mediaPartner.widht}
-								height={mediaPartner.height}
-							/>
-							)}
-					</div>
-
-				</div>
-				
-				<div className="my-5 md:mx-16 hidden">
+				<div className="my-5 md:mx-16">
 					<p className="text-ungu-400 font-bold text-4xl text-center mb-6 font-serif">Sponsors</p>
-					<div className="flex flex-wrap justify-evenly gap-3 items-center content-center">
+					<div className="flex flex-wrap justify-center gap-3 mb-20">
 						{sponsors.map((sponsor) => 
 							<Partner 
 								name={sponsor.name}
@@ -139,6 +124,23 @@ export default function Homepage () {
 					</div>
 
 				</div>
+
+				<div className="my-5 md:mx-16">
+					<p className="text-ungu-400 font-bold text-4xl text-center mb-6 font-serif">Media Partners</p>
+					<div className="flex flex-wrap justify-evenly gap-3 align-middle">
+						{mediaPartners.map((mediaPartner) => 
+							<Partner 
+								name={mediaPartner.name}
+								img={mediaPartner.img}
+								width={mediaPartner.widht}
+								height={mediaPartner.height}
+								text={mediaPartner.text}
+							/>
+							)}
+					</div>
+
+				</div>
+				
 				
 
 

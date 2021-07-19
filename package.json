@@ -22,7 +22,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "build-css": "tailwindcss build src/styles/base.css -o src/styles/main.css",
+    "build-css": "tailwindcss build src/Styles/base.css -o src/Styles/main.css",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
