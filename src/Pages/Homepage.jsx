@@ -38,7 +38,7 @@ export default function Homepage () {
 					<h2 className="text-center text-4xl font-bold font-serif text-white pt-4 mb-12 md:mb-0"> Registration for AIPC will be closed in</h2>
 					<Countdown
 						isDark={true} 
-						date="aug 14, 2021 23:59:59"
+						date="aug 28, 2021 23:59:59"
 					/>
 				</div>
 			</div>

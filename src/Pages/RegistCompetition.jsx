@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet'
 export default function Registration () {
-    let openRegistDate = new Date(new Date("aug 19, 2021 23:59:59").toLocaleString("en-US", {timeZone: "utc"})).getTime();
+    let openRegistDate = new Date(new Date("aug 28, 2021 23:59:59").toLocaleString("en-US", {timeZone: "utc"})).getTime();
     let now = new Date(new Date().toLocaleString("en-US", {timeZone: "utc"})).getTime();
     let distance = openRegistDate - now;
 
