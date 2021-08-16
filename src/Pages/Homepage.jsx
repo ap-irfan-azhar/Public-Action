@@ -127,7 +127,7 @@ export default function Homepage () {
 
 				<div className="my-5 md:mx-16">
 					<p className="text-ungu-400 font-bold text-4xl text-center mb-6 font-serif">Media Partners</p>
-					<div className="flex flex-wrap justify-evenly gap-3 align-middle">
+					<div className="flex flex-wrap justify-center gap-3 align-middle">
 						{mediaPartners.map((mediaPartner) => 
 							<Partner 
 								name={mediaPartner.name}

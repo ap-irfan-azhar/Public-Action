@@ -1,6 +1,6 @@
 export default function Patner(props){
     return(
-        <div className={`bg-white shadow rounded mx-auto md:w-${props.width} w-${Math.floor(props.width / 6) * 4 } md:h-${props.height} h-${Math.floor(props.height / 6) * 4 } relative`}>
+        <div className={`bg-white shadow rounded mx-auto md:w-${props.width} w-${Math.floor(props.width / 6) * 4 } md:h-${props.height} h-${Math.floor(props.height / 6) * 4 } relative self-center`}>
             <img
                 className="h-full w-full rounded"
                 src={process.env.PUBLIC_URL + "/images/partners/" + props.img}  
