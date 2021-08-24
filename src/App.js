@@ -1,16 +1,16 @@
-import { Switch, Route, useLocation } from 'react-router-dom';
-import Navbar from './Components/Navbar/NavBar'
-import Footer from './Components/Footer'
-import ScrollToTop from './Components/ScrollToTop'
-import About from './Pages/About'
-import Competition from './Pages/Competition'
-import Conference from './Pages/Conference'
-import SideEvents from './Pages/SideEvents'
-import Homepage from './Pages/Homepage'
-import RegistCompetition from './Pages/RegistCompetition'
-import RegistConference from './Pages/RegistConference'
-import AbstractSubmission from './Pages/AbstractSubmission'
-import Guidebook from './Pages/Guidebook'
+import { Switch, Route, useLocation } from "react-router-dom";
+import Navbar from "./Components/Navbar/NavBar";
+import Footer from "./Components/Footer";
+import ScrollToTop from "./Components/ScrollToTop";
+import About from "./Pages/About";
+import Competition from "./Pages/Competition";
+import Conference from "./Pages/Conference";
+import SideEvents from "./Pages/SideEvents";
+import Homepage from "./Pages/Homepage";
+import RegistCompetition from "./Pages/RegistCompetition";
+import RegistConference from "./Pages/RegistConference";
+import AbstractSubmission from "./Pages/AbstractSubmission";
+import Guidebook from "./Pages/Guidebook";
 import { AnimatePresence, motion } from "framer-motion";
 
 function App() {
@@ -28,13 +28,13 @@ function App() {
     out: {
       opacity: 0,
       x: "100vw",
-    }
+    },
   };
 
   const pageTransition = {
     type: "tween",
     ease: "anticipate",
-    duration: 0.5
+    duration: 0.5,
   };
 
   return (
@@ -42,7 +42,7 @@ function App() {
       <main className="App-header flex flex-col bg-putih overflow-hidden">
         <ScrollToTop />
         <Navbar />
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence exitBeforeEnter initial={false}>
           <Switch location={location} key={location.pathname}>
             <Route path="/events/competition" exact>
               <motion.div
@@ -57,104 +57,103 @@ function App() {
             </Route>
 
             <Route path="/events/conferences" exact>
-            <motion.div
+              <motion.div
                 initial="initial"
                 animate="in"
                 exit="out"
                 variants={pageVariants}
                 transition={pageTransition}
               >
-              <Conference />
-            </motion.div>
+                <Conference />
+              </motion.div>
             </Route>
-  
+
             <Route path="/events/side-events" exact>
-            <motion.div
+              <motion.div
                 initial="initial"
                 animate="in"
                 exit="out"
                 variants={pageVariants}
                 transition={pageTransition}
               >
-              <SideEvents />
-            </motion.div>
+                <SideEvents />
+              </motion.div>
             </Route>
-          
+
             <Route path="/abstract-submission" exact>
-            <motion.div
+              <motion.div
                 initial="initial"
                 animate="in"
                 exit="out"
                 variants={pageVariants}
                 transition={pageTransition}
               >
-              <AbstractSubmission />                  
-            </motion.div>
+                <AbstractSubmission />
+              </motion.div>
             </Route>
 
             <Route path="/guidebook" exact>
-            <motion.div
+              <motion.div
                 initial="initial"
                 animate="in"
                 exit="out"
                 variants={pageVariants}
                 transition={pageTransition}
               >
-              <Guidebook />                  
-            </motion.div>
+                <Guidebook />
+              </motion.div>
             </Route>
-                                    
+
             <Route path="/registration/conference" exact>
               <motion.div
-                  initial="initial"
-                  animate="in"
-                  exit="out"
-                  variants={pageVariants}
-                  transition={pageTransition}
-                >
-                <RegistConference />                  
+                initial="initial"
+                animate="in"
+                exit="out"
+                variants={pageVariants}
+                transition={pageTransition}
+              >
+                <RegistConference />
               </motion.div>
             </Route>
-            
+
             <Route path="/registration/competition" exact>
               <motion.div
-                  initial="initial"
-                  animate="in"
-                  exit="out"
-                  variants={pageVariants}
-                  transition={pageTransition}
-                >
-                <RegistCompetition />                  
+                initial="initial"
+                animate="in"
+                exit="out"
+                variants={pageVariants}
+                transition={pageTransition}
+              >
+                <RegistCompetition />
               </motion.div>
-            </Route>            
+            </Route>
 
             <Route path="/about" exact>
               <motion.div
-                  initial="initial"
-                  animate="in"
-                  exit="out"
-                  variants={pageVariants}
-                  transition={pageTransition}
-                >
-                <About />                  
+                initial="initial"
+                animate="in"
+                exit="out"
+                variants={pageVariants}
+                transition={pageTransition}
+              >
+                <About />
               </motion.div>
             </Route>
 
             <Route path="/" exact>
               <motion.div
-                  initial="initial"
-                  animate="in"
-                  exit="out"
-                  variants={pageVariants}
-                  transition={pageTransition}
-                >
-                <Homepage />                  
+                initial="initial"
+                animate="in"
+                exit="out"
+                variants={pageVariants}
+                transition={pageTransition}
+              >
+                <Homepage />
               </motion.div>
             </Route>
-
           </Switch>
         </AnimatePresence>
-        <Footer /> 
+        <Footer />
       </main>
     </div>
   );
