@@ -1,12 +1,12 @@
 import { Helmet } from "react-helmet";
 export default function AbstractSubmission() {
   let openRegistDate = new Date(
-    new Date("aug 30, 2021 23:59:59").toLocaleString("en-US", {
-      timeZone: "utc",
+    new Date("aug 31, 2021 23:59:59").toLocaleString("en-US", {
+      timeZone: "Asia/Jakarta",
     })
   ).getTime();
   let now = new Date(
-    new Date().toLocaleString("en-US", { timeZone: "utc" })
+    new Date().toLocaleString("en-US", { timeZone: "Asia/Jakarta" })
   ).getTime();
   let distance = openRegistDate - now;
   if (distance > 0) {
