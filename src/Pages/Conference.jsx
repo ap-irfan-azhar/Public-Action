@@ -4,6 +4,7 @@ import { speakers } from "../Data/aipcConference";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/swiper-bundle.css";
+import { Link } from "react-router-dom"
 
 export default function Conference() {
   SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
@@ -167,7 +168,7 @@ export default function Conference() {
             Public Action Conference
           </h1>
 
-          <div className="pb-20 relative z-10">
+          <div className="pb-12 relative z-10">
             <div className="md:flex items-center md:my-5 md:mt-8 mt-20 mb-20">
               <img
                 className="h-48 md:h-60 mx-auto border-r-4 border-b-4 border-ungu-300 rounded-2xl shadow-lg"
@@ -186,9 +187,13 @@ export default function Conference() {
                 </p>
               </div>
             </div>
-            <p className="md:text-8xl text-6xl font-serif font-bold text-ungu-300 text-center my-20">
-              Coming Soon
-            </p>
+
+            <div className="text-center mt-12 mb-28 justify-center">
+              <Link to="/registration/conference">
+                <p className="md:text-5xl font-serif font-bold text-putih text-4xl bg-ungu-300 hover:bg-ungu-200 transform hover:scale-105 transition duration-500 ease-in-out inline-block px-4 py-2 rounded-xl">Registrations</p>
+              
+              </Link>
+            </div>
           </div>
 
           <div className="absolute md:-top-32 top-44 md:-right-72 -right-96 opacity-75 z-0 transform -rotate-45">
